@@ -305,7 +305,7 @@
 				      "bus";
 		};
 
-		pio: pinctrl@10005000 {
+		pio: pinctrl@1000b000 {
 			compatible = "mediatek,mt8167-pinctrl";
 			reg = <0 0x1000b000 0 0x1000>;
 			mediatek,pctl-regmap = <&syscfg_pctl_a>;
@@ -317,13 +317,13 @@
 			interrupts = <GIC_SPI 134 IRQ_TYPE_LEVEL_HIGH>;
 
 			hdmi_overcurrent_pin: oflow {
-					pins_overflow_dat {
-						pins = <MT8167_PIN_8_EINT8__FUNC_GPIO8>;
-						input-enable;
-						bias-pull-up;
-					};
+				pins_overflow_dat {
+					pins = <MT8167_PIN_8_EINT8__FUNC_GPIO8>;
+					input-enable;
+					bias-pull-up;
+				};
 			};
-
+			
 			hdmi_pin: htplg {
 				pins_cmd_dat {
 					pins = <MT8167_PIN_122_HTPLG__FUNC_HTPLG>;
@@ -332,6 +332,7 @@
 					bias-pull-down;
 				};
 			};
+
 		};
 
 		dramco: dramco@10207000 {
@@ -434,8 +435,7 @@
 		};
 
 		cec: cec@0x1001a000 {
-			compatible = "mediatek,mt8167-cec",
-										"mediatek,mt8173-cec";
+			compatible = "mediatek,mt8167-cec", "mediatek,mt8173-cec";
 			reg = <0 0x1001a000 0 0xbc>;
 			interrupts = <GIC_SPI 148 IRQ_TYPE_LEVEL_LOW>;
 			clocks = <&topckgen CLK_TOP_26M_CEC>;
@@ -785,7 +785,7 @@
 			compatible = "mediatek,mt8167-ptp_od";
 			reg = <0 0x1100d000 0 0x1000>;
 			interrupts = <GIC_SPI 83 IRQ_TYPE_LEVEL_LOW>;
-			ptp_gpio = <&pio 11 0>;
+			//ptp_gpio = <&pio 11 0>;
 		};
 
 		disp_pwm0: disp_pwm0@1100f000 {

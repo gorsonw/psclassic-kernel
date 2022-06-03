@@ -14,7 +14,6 @@
 
 #include "mt8167.dtsi"
 #include "mt6392.dtsi"
-#include <dt-bindings/gpio/gpio.h>
 
 / {
 	/*
@@ -37,7 +36,7 @@
 
 	/* chosen */
 	chosen {
-		bootargs = "console=tty0 console=ttyS0,921600n1 earlycon=uart8250,mmio32,0x11005000 root=/dev/mmcblk0p7 vmalloc=496M androidboot.hardware=aud8516p1_linux";
+		bootargs = "console=tty1 console=ttyS0,921600n1 video=HDMI-A-1:1280x720@60D earlycon=uart8250,mmio32,0x11005000 root=/dev/mmcblk0p7 rw fsck.repair=yes rootwait vmalloc=496M androidboot.hardware=aud8516p1_linux";
 	};
 
 	dummy1v8: fixedregulator@0 {
@@ -56,6 +55,23 @@
 		regulator-always-on;
 	};
 
+/*
+	dummy5v0: fixedregulator@2 {
+		compatible = "regulator-fixed";
+		regulator-name = "5v0";
+		regulator-min-microvolt = <5000000>;
+		regulator-max-microvolt = <5000000>;
+		regulator-always-on;
+	};
+
+	usb_vbus_reg: regulator@3 {
+		compatible = "regulator-fixed";
+		regulator-name = "usbc_vbus";
+		regulator-min-microvolt = <5000000>;
+		regulator-max-microvolt = <5000000>;
+		vin-supply = <&dummy5v0>;
+	};
+*/
 	gpio-keys {
 		compatible = "gpio-keys";
 		pinctrl-names = "default";
@@ -64,9 +80,9 @@
 		button@0 {
 			debounce_interval = <50>;
 			gpios = <&pio 4 1>;
-			label = "sysreset";
+			label = "playpause";
 			linux,input-type = <0x1>;
-			linux,code = <160>;
+			linux,code = <164>;
 		};
 
 		button@1 {
@@ -82,9 +98,9 @@
 			wakeup-source;
 			gpio-key,wakeup = <1>;
 			gpios = <&pio 10 1>;
-			label = "powerkey";
+			label = "sleep";
 			linux,input-type = <0x1>;
-			linux,code = <164>;
+			linux,code = <142>;
 		};
 	};
 
@@ -104,25 +120,19 @@
 		mediatek,dmic-wire-mode = <1>; /* 0(ONE_WIRE) 1(TWO_WIRE) */
 	};
 
-	backlight_lcd0: backlight_lcd0 {
-       compatible = "pwm-backlight";
-       pwms = <&disp_pwm0 0 1000000>;
-       brightness-levels = <
-           0  16  32  48  64  80  96 112
-           128 144 160 176 192 208 224 240
-           255
-       >;
-       default-brightness-level = <5>;
+	rockled: rockled {
+		compatible = "gpio-leds";
+		green {
+			gpios = <&pio 12 0>;
+			default-state = "off";
+			retain-state-suspended;
+		};
+		red {
+			gpios = <&pio 0 0>;
+			default-state = "off";
+			retain-state-suspended;
+		};
 	};
-
-	panel: panel@0 {
-		compatible = "cpt,clap070wp03xg_lvds";
-		gpio_lcd_pwr = <&pio 67 0>;
-		reg-lcm-supply = <&mt6392_vgp2_reg>;
-	};
-
-
-
 	sound: sound {
 		compatible = "mediatek,mt8167-mt6392";
 		mediatek,platform = <&afe>;
@@ -162,10 +172,6 @@
 	proc-supply = <&mt6392_vproc_reg>;
 };
 
-&mipi_tx0 {
-	status = "okay";
-};
-
 &hdmi0 {
 	pinctrl-names = "default", "hdmi_hpd";
 	pinctrl-0 = <&hdmi_pins_default>;
@@ -179,29 +185,17 @@
 	pinctrl-0 = <&i2c0_pins_a>;
 	status = "okay";
 
-	lp8557_led@2c {
-		compatible = "ti,lp8557-led";
-		reg = <0x2c>;
-	};
-
 	strobe_main@63 {
 		compatible = "mediatek,strobe_main";
 		reg = <0x63>;
 	};
-};
 
-&lcm {
-	gpio_lcd_pwr = <&pio 67 0>;
-	reg-lcm-supply = <&mt6392_vgp2_reg>;
-};
+	br24_eeprom@50 {
+		compatible = "mediatek,br24_eeprom";
+		reg = <0x50>;
+		wc-gpio = <&pio 9 0>;
+	};
 
-&led1 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&led_green_pin_default>;
-
-	led_mode = <1>;
-	data = <1>;
-	status = "okay";
 };
 
 &mmc0 {
@@ -223,16 +217,22 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&state_default>;
 
-	state_default:pinconf_default {
+	state_default: pinconf_default {
+		pins_cmd_dat1 {
+			pinmux = <MT8167_PIN_1_EINT1__FUNC_GPIO1>,
+				<MT8167_PIN_2_EINT2__FUNC_GPIO2>;
+			slew-rate = <0>;
+			input-enable;
+			bias-disable;
+		};
+		pins_cmd_dat2 {
+			pinmux = <MT8167_PIN_6_EINT6__FUNC_GPIO6>,
+				<MT8167_PIN_7_EINT7__FUNC_GPIO7>;
+			slew-rate = <0>;
+			input-enable;
+			bias-pull-up;
+		};
 	};
-
-
-pwm_goio_def_cfg: pwmdefault {
-		pins_cmd_dat {
-			pinmux = <MT8167_PIN_54_DISP_PWM__FUNC_DISP_PWM>;
-			};
-};
-
 	aud_pins_default: audiodefault {
 	};
 	aud_pins_extamp_on: audexampon {
@@ -240,7 +240,6 @@ pwm_goio_def_cfg: pwmdefault {
 
 	aud_pins_extamp_off: audexampoff {
 	};
-	
 	gpio_keys_default: gpiodefault {
 		pins_cmd_dat {
 			pinmux = <MT8167_PIN_4_EINT4__FUNC_GPIO4>,
@@ -274,13 +273,6 @@ pwm_goio_def_cfg: pwmdefault {
 			pinmux = <MT8167_PIN_58_SDA0__FUNC_SDA0_0>,
 				 <MT8167_PIN_59_SCL0__FUNC_SCL0_0>;
 			bias-disable;
-		};
-	};
-
-	led_green_pin_default: led_green_pin_default {
-		pins_cmd_dat {
-			pins = <MT8167_PIN_0_EINT0__FUNC_PWM_B>;
-			slew-rate = <1>;
 		};
 	};
 
@@ -338,64 +330,23 @@ pwm_goio_def_cfg: pwmdefault {
 		};
 	};
 
-	usb1_default_pin: usb1_default_pin {
+	uart0_pin: uart0_pin {
 		pins_cmd_dat {
-			pinmux = <MT8167_PIN_1_EINT1__FUNC_GPIO1>,
-				 <MT8167_PIN_2_EINT2__FUNC_GPIO2>;
-		};
-	};
-
-	usb1_p1_cldet_init: usb1_p1_cldet_init {
-		pins_cmd_dat {
-			pinmux = <MT8167_PIN_6_EINT6__FUNC_GPIO6>;
-			slew-rate = <0>;
-			bias-pull-up;
-		};
-	};
-
-	usb1_p2_cldet_init: usb1_p2_cldet_init {
-		pins_cmd_dat {
-			pinmux = <MT8167_PIN_7_EINT7__FUNC_GPIO7>;
-			slew-rate = <0>;
-			bias-pull-up;
-		};
-	};
-
-	usb1_p1_high: usb1_p1_high {
-		pins_cmd_dat {
-			pinmux = <MT8167_PIN_1_EINT1__FUNC_GPIO1>;
-			slew-rate = <1>;
-			output-high;
+			pinmux = <MT8167_PIN_20_EINT20__FUNC_GPIO20>;
+			input-enable;
 			bias-disable;
 		};
 	};
 
-	usb1_p1_low: usb1_p1_low {
+/*
+	ptp_od_pin: ptp_od_pin {
 		pins_cmd_dat {
-			pinmux = <MT8167_PIN_1_EINT1__FUNC_GPIO1>;
-			slew-rate = <1>;
-			output-low;
+			pinmux = <MT8167_PIN_11_EINT11__FUNC_GPIO11>;
+			input-enable;
 			bias-disable;
 		};
 	};
-
-	usb1_p2_high: usb1_p2_high {
-		pins_cmd_dat {
-			pins = <MT8167_PIN_2_EINT2__FUNC_GPIO2>;
-			slew-rate = <1>;
-			output-high;
-			bias-disable;
-		};
-	};
-
-	usb1_p2_low: usb1_p2_low {
-		pins_cmd_dat {
-			pins = <MT8167_PIN_2_EINT2__FUNC_GPIO2>;
-			slew-rate = <1>;
-			output-low;
-			bias-disable;
-		};
-	};
+*/	
 };
 
 &pmic {
@@ -416,38 +367,22 @@ pwm_goio_def_cfg: pwmdefault {
 &ptp_od {
 	vproc-supply = <&mt6392_vproc_reg>;
 	vcore-supply = <&mt6392_vcore_reg>;
+
+	//pinctrl-names = "default";
+	//pinctrl-0 = <&ptp_od_pin>;
+	//status="okay";
 };
 
 &uart0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart0_pin>;
 	status="okay";
 };
 
+/*
 &usb1 {
-	pinctrl-names = "default", "usb1_p1_high", "usb1_p1_low",
-			"usb1_p2_high", "usb1_p2_low",
-			"usb1_p1_cldet_init", "usb1_p2_cldet_init";
-	pinctrl-0 = <&usb1_default_pin>;
-	pinctrl-1 = <&usb1_p1_high>;
-	pinctrl-2 = <&usb1_p1_low>;
-	pinctrl-3 = <&usb1_p2_high>;
-	pinctrl-4 = <&usb1_p2_low>;
-	pinctrl-5 = <&usb1_p1_cldet_init>;
-	pinctrl-6 = <&usb1_p2_cldet_init>;
-
-	ocp_p1_cldet = <&pio 6 0>;
-	ocp_p2_cldet = <&pio 7 0>;
-
 	status = "okay";
+	dr_mode = "otg";
+	vbus-supply = <&usb_vbus_reg>;
 };
-
-&pwm {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pwm_goio_def_cfg>;
-	status = "okay";
-};
-
-&disp_pwm0 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pwm_goio_def_cfg>;
-	status = "okay";
-};
+*/

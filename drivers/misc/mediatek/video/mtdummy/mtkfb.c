@@ -406,7 +406,7 @@ static int mtkfb_fbinfo_init(struct fb_info *info)
 	struct fb_var_screeninfo var;
 	int r = 0;
 
-	ASSERT(!fbdev->fb_va_base);
+	//ASSERT(!fbdev->fb_va_base);
 	info->fbops = &mtkfb_ops;
 	info->flags = FBINFO_FLAG_DEFAULT;
 	info->screen_base = (char *)fbdev->fb_va_base;
@@ -479,7 +479,7 @@ static void mtkfb_free_resources(struct mtkfb_device *fbdev, int state)
 	switch (state) {
 	case MTKFB_ACTIVE:
 		r = unregister_framebuffer(fbdev->fb_info);
-		ASSERT(r == 0);
+		//ASSERT(r == 0);
 		/* lint -fallthrough */
 	case 4:
 		mtkfb_fbinfo_cleanup(fbdev);
@@ -611,7 +611,7 @@ int __parse_tag_videolfb(unsigned long node)
 }
 
 
-static int _parse_tag_videolfb(void)
+int _parse_tag_videolfb(void)
 {
 	int ret;
 	unsigned long node = 0;

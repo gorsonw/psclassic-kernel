@@ -316,6 +316,14 @@
 			#interrupt-cells = <2>;
 			interrupts = <GIC_SPI 134 IRQ_TYPE_LEVEL_HIGH>;
 
+			hdmi_overcurrent_pin: oflow {
+				pins_overflow_dat {
+					pins = <MT8167_PIN_8_EINT8__FUNC_GPIO8>;
+					input-enable;
+					bias-pull-up;
+				};
+			};
+			
 			hdmi_pin: htplg {
 				pins_cmd_dat {
 					pins = <MT8167_PIN_122_HTPLG__FUNC_HTPLG>;
@@ -324,6 +332,7 @@
 					bias-pull-down;
 				};
 			};
+
 		};
 
 		dramco: dramco@10207000 {
@@ -403,6 +412,10 @@
 			clock-output-names = "hdmtx_dig_cts";
 			mediatek,ibias = <0xa>;
 			mediatek,ibias_up = <0x1c>;
+			pinctrl-names = "default";
+			pinctrl-0 = <&hdmi_overcurrent_pin>;
+			hdmi_power_gpio = <&pio 3 0>;
+			hdmi_over_current_gpio = <&pio 8 0>;
 			#clock-cells = <0>;
 			#phy-cells = <0>;
 		};
@@ -638,6 +651,7 @@
 			interrupts = <GIC_SPI 84 IRQ_TYPE_LEVEL_LOW>;
 			clocks = <&topckgen CLK_TOP_UART0_SEL>, <&topckgen CLK_TOP_UART0>;
 			clock-names = "baud","bus";
+			uart_gpio = <&pio 20 0>;
 			status = "disabled";
 		};
 
@@ -772,6 +786,7 @@
 			compatible = "mediatek,mt8167-ptp_od";
 			reg = <0 0x1100d000 0 0x1000>;
 			interrupts = <GIC_SPI 83 IRQ_TYPE_LEVEL_LOW>;
+			//ptp_gpio = <&pio 11 0>;
 		};
 
 		disp_pwm0: disp_pwm0@1100f000 {

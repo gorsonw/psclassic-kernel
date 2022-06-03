@@ -163,6 +163,7 @@ drm_encoder_disable(struct drm_encoder *encoder)
 {
 	const struct drm_encoder_helper_funcs *encoder_funcs = encoder->helper_private;
 
+	printk("KLW: drm_encoder_disable, drm_bridge_disable\n");
 	drm_bridge_disable(encoder->bridge);
 
 	if (encoder_funcs->disable)
@@ -170,6 +171,7 @@ drm_encoder_disable(struct drm_encoder *encoder)
 	else if (encoder_funcs->dpms)
 		(*encoder_funcs->dpms)(encoder, DRM_MODE_DPMS_OFF);
 
+	printk("KLW: drm_encoder_disable, drm_bridge_post_disable\n");
 	drm_bridge_post_disable(encoder->bridge);
 }
 
@@ -182,6 +184,7 @@ static void __drm_helper_disable_unused_functions(struct drm_device *dev)
 
 	drm_for_each_encoder(encoder, dev) {
 		if (!drm_helper_encoder_in_use(encoder)) {
+			printk("!drm_helper_encoder_in_use\n");
 			drm_encoder_disable(encoder);
 			/* disconnect encoder from any connector */
 			encoder->crtc = NULL;
@@ -192,6 +195,7 @@ static void __drm_helper_disable_unused_functions(struct drm_device *dev)
 		const struct drm_crtc_helper_funcs *crtc_funcs = crtc->helper_private;
 		crtc->enabled = drm_helper_crtc_in_use(crtc);
 		if (!crtc->enabled) {
+			printk("!crtc->enabled -> crtc_funcs->disable\n");
 			if (crtc_funcs->disable)
 				(*crtc_funcs->disable)(crtc);
 			else
@@ -233,12 +237,16 @@ drm_crtc_prepare_encoders(struct drm_device *dev)
 	drm_for_each_encoder(encoder, dev) {
 		encoder_funcs = encoder->helper_private;
 		/* Disable unused encoders */
-		if (encoder->crtc == NULL)
+		if (encoder->crtc == NULL) {
+			printk("!drm_crtc_prepare_encoders, drm_encoder_disable1\n");
 			drm_encoder_disable(encoder);
+		}
 		/* Disable encoders whose CRTC is about to change */
-		if (encoder_funcs->get_crtc &&
-		    encoder->crtc != (*encoder_funcs->get_crtc)(encoder))
+		if (encoder_funcs->get_crtc &&  
+		    encoder->crtc != (*encoder_funcs->get_crtc)(encoder)) {
+			printk("!drm_crtc_prepare_encoders, drm_encoder_disable2\n");
 			drm_encoder_disable(encoder);
+		}
 	}
 }
 
@@ -334,20 +342,26 @@ bool drm_crtc_helper_set_mode(struct drm_crtc *crtc,
 	crtc->hwmode = *adjusted_mode;
 
 	/* Prepare the encoders and CRTCs before setting the mode. */
+	printk("KLW: drm_for_each_encoder\n");
 	drm_for_each_encoder(encoder, dev) {
 
-		if (encoder->crtc != crtc)
+		if (encoder->crtc != crtc) {
+			printk("KLW: encoder->crtc != crtc THEN continue");
 			continue;
+		}
 
+		printk("KLW: drm_bridge_disable()\n");
 		drm_bridge_disable(encoder->bridge);
 
 		encoder_funcs = encoder->helper_private;
 		/* Disable the encoders as the first thing we do. */
 		encoder_funcs->prepare(encoder);
 
+		printk("KLW: drm_bridge_post_disable()\n");
 		drm_bridge_post_disable(encoder->bridge);
 	}
 
+	printk("KLW: drm_crtc_prepare_encoders()\n");
 	drm_crtc_prepare_encoders(dev);
 
 	crtc_funcs->prepare(crtc);
@@ -356,13 +370,17 @@ bool drm_crtc_helper_set_mode(struct drm_crtc *crtc,
 	 * on the DPLL.
 	 */
 	ret = !crtc_funcs->mode_set(crtc, mode, adjusted_mode, x, y, old_fb);
+	
+	printk("KLW: ret = %d\n", ret);
 	if (!ret)
 	    goto done;
 
 	drm_for_each_encoder(encoder, dev) {
 
-		if (encoder->crtc != crtc)
+		if (encoder->crtc != crtc) {
+			printk("KLW: encoder->crtc != crtc, continue\n");
 			continue;
+		}
 
 		DRM_DEBUG_KMS("[ENCODER:%d:%s] set [MODE:%d:%s]\n",
 			encoder->base.id, encoder->name,
@@ -370,6 +388,7 @@ bool drm_crtc_helper_set_mode(struct drm_crtc *crtc,
 		encoder_funcs = encoder->helper_private;
 		encoder_funcs->mode_set(encoder, mode, adjusted_mode);
 
+		printk("KLW: drm_bridge_mode_set\n");
 		drm_bridge_mode_set(encoder->bridge, mode, adjusted_mode);
 	}
 
@@ -380,12 +399,14 @@ bool drm_crtc_helper_set_mode(struct drm_crtc *crtc,
 
 		if (encoder->crtc != crtc)
 			continue;
-
+			
+		printk("KLW: drm_bridge_pre_enable\n");
 		drm_bridge_pre_enable(encoder->bridge);
 
 		encoder_funcs = encoder->helper_private;
 		encoder_funcs->commit(encoder);
 
+		printk("KLW: drm_bridge_enable\n");
 		drm_bridge_enable(encoder->bridge);
 	}
 

@@ -57,7 +57,7 @@ config MTD_CFI_NOSWAP
 	bool "NO"
 
 config MTD_CFI_BE_BYTE_SWAP
-	bool "BIG_ENDIAN_BYTE"
+	bool "tBIG_ENDIAN_BYTE"
 
 config MTD_CFI_LE_BYTE_SWAP
 	bool "LITTLE_ENDIAN_BYTE"

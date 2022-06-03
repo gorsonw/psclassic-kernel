@@ -36,7 +36,7 @@
 
 	/* chosen */
 	chosen {
-		bootargs = "console=tty0 console=ttyS0,921600n1 earlycon=uart8250,mmio32,0x11005000 root=/dev/mmcblk0p7 fsck.repair=yes rootwait vmalloc=496M androidboot.hardware=aud8516p1_linux";
+		bootargs = "console=tty1 console=ttyS0,921600n1 video=HDMI-A-1:1280x720@60D earlycon=uart8250,mmio32,0x11005000 root=/dev/mmcblk0p7 rw fsck.repair=yes rootwait vmalloc=496M androidboot.hardware=aud8516p1_linux";
 	};
 
 	dummy1v8: fixedregulator@0 {
@@ -55,6 +55,7 @@
 		regulator-always-on;
 	};
 
+/*
 	dummy5v0: fixedregulator@2 {
 		compatible = "regulator-fixed";
 		regulator-name = "5v0";
@@ -70,7 +71,7 @@
 		regulator-max-microvolt = <5000000>;
 		vin-supply = <&dummy5v0>;
 	};
-
+*/
 	gpio-keys {
 		compatible = "gpio-keys";
 		pinctrl-names = "default";
@@ -216,7 +217,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&state_default>;
 
-	state_default:pinconf_default {
+	state_default: pinconf_default {
 		pins_cmd_dat1 {
 			pinmux = <MT8167_PIN_1_EINT1__FUNC_GPIO1>,
 				<MT8167_PIN_2_EINT2__FUNC_GPIO2>;
@@ -337,6 +338,7 @@
 		};
 	};
 
+/*
 	ptp_od_pin: ptp_od_pin {
 		pins_cmd_dat {
 			pinmux = <MT8167_PIN_11_EINT11__FUNC_GPIO11>;
@@ -344,6 +346,7 @@
 			bias-disable;
 		};
 	};
+*/	
 };
 
 &pmic {
@@ -365,9 +368,9 @@
 	vproc-supply = <&mt6392_vproc_reg>;
 	vcore-supply = <&mt6392_vcore_reg>;
 
-	pinctrl-names = "default";
-	pinctrl-0 = <&ptp_od_pin>;
-	status="okay";
+	//pinctrl-names = "default";
+	//pinctrl-0 = <&ptp_od_pin>;
+	//status="okay";
 };
 
 &uart0 {
@@ -376,8 +379,10 @@
 	status="okay";
 };
 
+/*
 &usb1 {
 	status = "okay";
 	dr_mode = "otg";
 	vbus-supply = <&usb_vbus_reg>;
 };
+*/

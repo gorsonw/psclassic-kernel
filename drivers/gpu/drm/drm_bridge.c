@@ -220,6 +220,7 @@ EXPORT_SYMBOL(drm_bridge_disable);
  */
 void drm_bridge_post_disable(struct drm_bridge *bridge)
 {
+	printk("KLW: drm_bridge_post_disable(), drm_bridge.c\n");
 	if (!bridge)
 		return;
 

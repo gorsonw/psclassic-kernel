@@ -1320,8 +1320,7 @@ static int mtk_hdmi_bridge_attach(struct drm_bridge *bridge)
 {
 	struct mtk_hdmi *hdmi = hdmi_ctx_from_bridge(bridge);
 	int ret;
-
-	dev_err(hdmi->dev, "%s\n",__func__);
+	printk("KLW: %s, %s\n", hdmi->dev->init_name, __func__);
 
 	ret = drm_connector_init(bridge->encoder->dev, &hdmi->conn,
 				 &mtk_hdmi_connector_funcs,
@@ -1363,13 +1362,14 @@ static bool mtk_hdmi_bridge_mode_fixup(struct drm_bridge *bridge,
 				       const struct drm_display_mode *mode,
 				       struct drm_display_mode *adjusted_mode)
 {
+	printk("KLW: %s\n",__func__);
 	return true;
 }
 
 static void mtk_hdmi_bridge_disable(struct drm_bridge *bridge)
 {
 	struct mtk_hdmi *hdmi = hdmi_ctx_from_bridge(bridge);
-
+	printk("KLW %s\n",__func__);
 	if (!hdmi->enabled)
 		return;
 
@@ -1383,7 +1383,7 @@ static void mtk_hdmi_bridge_disable(struct drm_bridge *bridge)
 static void mtk_hdmi_bridge_post_disable(struct drm_bridge *bridge)
 {
 	struct mtk_hdmi *hdmi = hdmi_ctx_from_bridge(bridge);
-
+	printk("KLW: %s\n",__func__);
 	if (!hdmi->powered)
 		return;
 
@@ -1391,7 +1391,7 @@ static void mtk_hdmi_bridge_post_disable(struct drm_bridge *bridge)
 	mtk_hdmi_hw_make_reg_writable(hdmi, false);
 	gpio_set_value(hdmi_power_pin,0);
 	mtk_cec_htplg_irq_control(hdmi->cec_dev, false);
-	printk("mtk_hdmi_bridge_post_disable\n");
+	printk("KLW mtk_hdmi_bridge_post_disable\n");
 
 	hdmi->powered = false;
 }
@@ -1401,6 +1401,7 @@ static void mtk_hdmi_bridge_mode_set(struct drm_bridge *bridge,
 				     struct drm_display_mode *adjusted_mode)
 {
 	struct mtk_hdmi *hdmi = hdmi_ctx_from_bridge(bridge);
+	printk("KLW: %s\n",__func__);	
 
 	dev_dbg(hdmi->dev, "cur info: name:%s, hdisplay:%d\n",
 		adjusted_mode->name, adjusted_mode->hdisplay);
@@ -1421,6 +1422,7 @@ static void mtk_hdmi_bridge_mode_set(struct drm_bridge *bridge,
 static void mtk_hdmi_bridge_pre_enable(struct drm_bridge *bridge)
 {
 	struct mtk_hdmi *hdmi = hdmi_ctx_from_bridge(bridge);
+	printk("KLW %s\n",__func__);
 
 	mtk_hdmi_hw_make_reg_writable(hdmi, true);
 	mtk_hdmi_hw_1p4_version_enable(hdmi, true);
@@ -1442,6 +1444,7 @@ static void mtk_hdmi_send_infoframe(struct mtk_hdmi *hdmi, struct drm_display_mo
 static void mtk_hdmi_bridge_enable(struct drm_bridge *bridge)
 {
 	struct mtk_hdmi *hdmi = hdmi_ctx_from_bridge(bridge);
+	printk("KLW %s\n",__func__);
 
 	phy_power_on(hdmi->phy);
 	mtk_hdmi_output_set_display_mode(hdmi, &hdmi->mode);
@@ -1472,7 +1475,7 @@ static int mtk_hdmi_dt_parse_pdata(struct mtk_hdmi *hdmi,
 	struct regmap *regmap;
 	struct resource *mem;
 	int ret;
-
+	printk("KLW: %s\n",__func__);	
 	ret = mtk_hdmi_get_all_clk(hdmi, np);
 	if (ret) {
 		dev_err(dev, "Failed to get clocks: %d\n", ret);
@@ -1529,6 +1532,7 @@ static int mtk_hdmi_dt_parse_pdata(struct mtk_hdmi *hdmi,
 		goto find_ddc_adpt;
 	}
 
+	printk("KLW: of_get_child_by_name(port, endpoint)\n");	
 	ep = of_get_child_by_name(port, "endpoint");
 	if (!ep) {
 		dev_err(dev, "Missing endpoint node in port %s\n",
@@ -1538,6 +1542,7 @@ static int mtk_hdmi_dt_parse_pdata(struct mtk_hdmi *hdmi,
 	}
 	of_node_put(port);
 
+	printk("KLW: of_graph_get_remote_port_parent(ep)\n");	
 	remote = of_graph_get_remote_port_parent(ep);
 	if (!remote) {
 		dev_err(dev, "Missing connector/bridge node for endpoint %s\n",
@@ -1547,6 +1552,7 @@ static int mtk_hdmi_dt_parse_pdata(struct mtk_hdmi *hdmi,
 	}
 	of_node_put(ep);
 
+	printk("KLW: of_device_is_compatible()\n");	
 	if (!of_device_is_compatible(remote, "hdmi-connector")) {
 		hdmi->bridge.next = of_drm_find_bridge(remote);
 		if (!hdmi->bridge.next) {
@@ -1556,6 +1562,7 @@ static int mtk_hdmi_dt_parse_pdata(struct mtk_hdmi *hdmi,
 		}
 	}
 
+	printk("KLW: of_parse_phandle()\n");	
 	i2c_np = of_parse_phandle(remote, "ddc-i2c-bus", 0);
 	if (!i2c_np) {
 		dev_err(dev, "Failed to find ddc-i2c-bus node in %s\n",
@@ -1566,12 +1573,14 @@ static int mtk_hdmi_dt_parse_pdata(struct mtk_hdmi *hdmi,
 	of_node_put(remote);
 
 find_ddc_adpt:
+	printk("KLW: of_find_i2c_adapter_by_node()\n");	
 	hdmi->ddc_adpt = of_find_i2c_adapter_by_node(i2c_np);
 	if (!hdmi->ddc_adpt) {
 		dev_err(dev, "Failed to get ddc i2c adapter by node\n");
 		return -EINVAL;
 	}
 
+	printk("KLW: return 0\n");	
 	return 0;
 }
 
