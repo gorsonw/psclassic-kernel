@@ -363,7 +363,7 @@ CFLAGS_MODULE   =
 AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
 #CFLAGS_KERNEL	= -Wno-error=format-truncation -Wno-error=attribute-alias -Wno-error=packed-not-aligned -Wno-error=format-overflow= -Wno-error=sizeof-pointer-memaccess
-CFLAGS_KERNEL	= --disable-werror
+CFLAGS_KERNEL	= -w
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage -fno-tree-loop-im
 
