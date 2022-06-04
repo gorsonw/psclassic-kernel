@@ -1,0 +1,841 @@
+-d-c----x---- : /atf_logger : mediatek,atf_logger : drivers/misc/mediatek/atf_log/atf_logger.c : atf_log-y : none
+
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-clps711x/board-edb7211.c : CONFIG_ARCH_EDB7211 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/cm-x300.c : CONFIG_MACH_CM_X300 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/colibri-pxa270-income.c : CONFIG_MACH_COLIBRI_PXA270_INCOME : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/ezx.c : CONFIG_PXA_EZX : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/hx4700.c : CONFIG_MACH_H4700 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/lpd270.c : CONFIG_MACH_LOGICPD_PXA270 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/magician.c : CONFIG_MACH_MAGICIAN : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/mainstone.c : CONFIG_MACH_MAINSTONE : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/mioa701.c : CONFIG_MACH_MIOA701 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/palm27x.c : CONFIG_MACH_PALM27X : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/palmtc.c : CONFIG_MACH_PALMTC : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/palmte2.c : CONFIG_MACH_PALMTE2 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/pcm990-baseboard.c : CONFIG_MACH_PCM990_BASEBOARD : none
+-dDcC--H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/raumfeld.c : CONFIG_MACH_RAUMFELD_RC : none
+-dDcC--H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/raumfeld.c : CONFIG_MACH_RAUMFELD_CONNECTOR : none
+-dDcC--H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/raumfeld.c : CONFIG_MACH_RAUMFELD_SPEAKER : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/tavorevb.c : CONFIG_MACH_TAVOREVB : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/viper.c : CONFIG_ARCH_VIPER : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/z2.c : CONFIG_MACH_ZIPIT2 : none
+-dDcC--H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/zylonite.c : CONFIG_MACH_ZYLONITE300 : none
+-dDcC--H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-pxa/zylonite.c : CONFIG_MACH_ZYLONITE320 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-s3c24xx/mach-h1940.c : CONFIG_ARCH_H1940 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-s3c24xx/mach-rx1950.c : CONFIG_MACH_RX1950 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-s3c64xx/dev-backlight.c : CONFIG_SAMSUNG_DEV_BACKLIGHT : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-s3c64xx/mach-crag6410.c : CONFIG_MACH_WLF_CRAGG_6410 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-s3c64xx/mach-hmt.c : CONFIG_MACH_HMT : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/arm/mach-s3c64xx/mach-smartq.c : CONFIG_MACH_SMARTQ : none
+-dDc---Hx---- : /backlight_lcd0 : pwm-backlight : arch/avr32/boards/favr-32/setup.c : obj-y : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : arch/unicore32/kernel/puv3-nb0916.c : CONFIG_PUV3_NB0916 : none
+-dDc---H----- : /backlight_lcd0 : pwm-backlight : drivers/video/backlight/pwm_bl.c : CONFIG_BACKLIGHT_PWM : none
+
+------W------ : /clocks : simple-bus : no_driver : no_config : none
+
+-dDc--------- : /clocks/clk26m : fixed-clock : arch/powerpc/platforms/512x/clock-commonclk.c : CONFIG_COMMON_CLK : none
+-dDc--------- : /clocks/clk26m : fixed-clock : drivers/clk/clk-fixed-rate.c : CONFIG_COMMON_CLK : none
+-dDc--------- : /clocks/clk26m : fixed-clock : drivers/clk/clk-u300.c : CONFIG_ARCH_U300 : none
+-dDc--------- : /clocks/clk26m : fixed-clock : drivers/clk/imx/clk-imx25.c : CONFIG_SOC_IMX25 : none
+-dDc--------- : /clocks/clk26m : fixed-clock : drivers/clk/imx/clk-imx27.c : CONFIG_SOC_IMX27 : none
+-dDc--------- : /clocks/clk26m : fixed-clock : drivers/clk/imx/clk-imx31.c : CONFIG_SOC_IMX31 : none
+
+-dDc--------- : /clocks/clk32k : fixed-clock : arch/powerpc/platforms/512x/clock-commonclk.c : CONFIG_COMMON_CLK : none
+-dDc--------- : /clocks/clk32k : fixed-clock : drivers/clk/clk-fixed-rate.c : CONFIG_COMMON_CLK : none
+-dDc--------- : /clocks/clk32k : fixed-clock : drivers/clk/clk-u300.c : CONFIG_ARCH_U300 : none
+-dDc--------- : /clocks/clk32k : fixed-clock : drivers/clk/imx/clk-imx25.c : CONFIG_SOC_IMX25 : none
+-dDc--------- : /clocks/clk32k : fixed-clock : drivers/clk/imx/clk-imx27.c : CONFIG_SOC_IMX27 : none
+-dDc--------- : /clocks/clk32k : fixed-clock : drivers/clk/imx/clk-imx31.c : CONFIG_SOC_IMX31 : none
+
+-dDc--------- : /cpus/cpu@0 : arm,cortex-a53 : arch/arm/kernel/topology.c : CONFIG_ARM_CPU_TOPOLOGY : none
+-dDc----x---- : /cpus/cpu@0 : arm,cortex-a53 : arch/arm64/kernel/topology.c : arm64-obj-y : none
+
+-dDc--------- : /cpus/cpu@1 : arm,cortex-a53 : arch/arm/kernel/topology.c : CONFIG_ARM_CPU_TOPOLOGY : none
+-dDc----x---- : /cpus/cpu@1 : arm,cortex-a53 : arch/arm64/kernel/topology.c : arm64-obj-y : none
+
+-dDc--------- : /cpus/cpu@2 : arm,cortex-a53 : arch/arm/kernel/topology.c : CONFIG_ARM_CPU_TOPOLOGY : none
+-dDc----x---- : /cpus/cpu@2 : arm,cortex-a53 : arch/arm64/kernel/topology.c : arm64-obj-y : none
+
+-dDc--------- : /cpus/cpu@3 : arm,cortex-a53 : arch/arm/kernel/topology.c : CONFIG_ARM_CPU_TOPOLOGY : none
+-dDc----x---- : /cpus/cpu@3 : arm,cortex-a53 : arch/arm64/kernel/topology.c : arm64-obj-y : none
+
+-dDc--------- : /cpus/idle-states/cluster-sleep-0 : arm,idle-state : drivers/cpuidle/cpuidle-arm.c : CONFIG_ARM_CPUIDLE : none
+-dDc--------- : /cpus/idle-states/cluster-sleep-0 : arm,idle-state : drivers/cpuidle/cpuidle-big_little.c : CONFIG_ARM_BIG_LITTLE_CPUIDLE : none
+-dDcC-------- : /cpus/idle-states/cluster-sleep-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt67xx_v2.c : CONFIG_MACH_MT6757 : none
+-dDcC-------- : /cpus/idle-states/cluster-sleep-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt67xx_v2.c : CONFIG_MACH_KIBOPLUS : none
+-dDc--------- : /cpus/idle-states/cluster-sleep-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt67xx_v3.c : CONFIG_MACH_MT6799 : none
+-dDc--------- : /cpus/idle-states/cluster-sleep-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt81xx_v2.c : CONFIG_MACH_MT8167 : none
+
+-dDc--------- : /cpus/idle-states/cpu-sleep-0-0 : arm,idle-state : drivers/cpuidle/cpuidle-arm.c : CONFIG_ARM_CPUIDLE : none
+-dDc--------- : /cpus/idle-states/cpu-sleep-0-0 : arm,idle-state : drivers/cpuidle/cpuidle-big_little.c : CONFIG_ARM_BIG_LITTLE_CPUIDLE : none
+-dDcC-------- : /cpus/idle-states/cpu-sleep-0-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt67xx_v2.c : CONFIG_MACH_MT6757 : none
+-dDcC-------- : /cpus/idle-states/cpu-sleep-0-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt67xx_v2.c : CONFIG_MACH_KIBOPLUS : none
+-dDc--------- : /cpus/idle-states/cpu-sleep-0-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt67xx_v3.c : CONFIG_MACH_MT6799 : none
+-dDc--------- : /cpus/idle-states/cpu-sleep-0-0 : arm,idle-state : drivers/cpuidle/cpuidle-mt81xx_v2.c : CONFIG_MACH_MT8167 : none
+
+-d-c--------- : /fixedregulator@0 : regulator-fixed : drivers/regulator/fixed.c : CONFIG_REGULATOR_FIXED_VOLTAGE : none
+
+-d-c--------- : /fixedregulator@1 : regulator-fixed : drivers/regulator/fixed.c : CONFIG_REGULATOR_FIXED_VOLTAGE : none
+
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-gemini/board-nas4220b.c : CONFIG_MACH_NAS4220B : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-gemini/board-rut1xx.c : CONFIG_MACH_RUT100 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-gemini/board-wbd111.c : CONFIG_MACH_WBD111 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-gemini/board-wbd222.c : CONFIG_MACH_WBD222 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-imx/devices/platform-gpio_keys.c : CONFIG_IMX_HAVE_PLATFORM_GPIO_KEYS : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-omap1/board-htcherald.c : CONFIG_MACH_HERALD : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-omap2/board-ldp.c : CONFIG_MACH_OMAP_LDP : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-omap2/board-rx51-peripherals.c : CONFIG_MACH_NOKIA_RX51 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/dns323-setup.c : CONFIG_MACH_DNS323 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/ls-chl-setup.c : CONFIG_MACH_LINKSTATION_LSCHL : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/ls_hgl-setup.c : CONFIG_MACH_LINKSTATION_LS_HGL : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/mv2120-setup.c : CONFIG_MACH_MV2120 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/net2big-setup.c : CONFIG_MACH_NET2BIG : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/ts209-setup.c : CONFIG_MACH_TS209 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/ts409-setup.c : CONFIG_MACH_TS409 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-orion5x/wrt350n-v2-setup.c : CONFIG_MACH_WRT350N_V2 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/csb701.c : CONFIG_CSB726_CSB701 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/em-x270.c : CONFIG_MACH_EM_X270 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/ezx.c : CONFIG_PXA_EZX : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/hx4700.c : CONFIG_MACH_H4700 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/magician.c : CONFIG_MACH_MAGICIAN : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/mainstone.c : CONFIG_MACH_MAINSTONE : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/mioa701.c : CONFIG_MACH_MIOA701 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/palmld.c : CONFIG_MACH_PALMLD : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/palmt5.c : CONFIG_MACH_PALMT5 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/palmtc.c : CONFIG_MACH_PALMTC : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/palmte2.c : CONFIG_MACH_PALMTE2 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/palmtx.c : CONFIG_MACH_PALMTX : none
+-dDcC--H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/raumfeld.c : CONFIG_MACH_RAUMFELD_RC : none
+-dDcC--H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/raumfeld.c : CONFIG_MACH_RAUMFELD_CONNECTOR : none
+-dDcC--H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/raumfeld.c : CONFIG_MACH_RAUMFELD_SPEAKER : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/spitz.c : CONFIG_PXA_SHARP_Cxx00 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/tosa.c : CONFIG_MACH_TOSA : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/vpac270.c : CONFIG_MACH_VPAC270 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-pxa/z2.c : CONFIG_MACH_ZIPIT2 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c24xx/mach-gta02.c : CONFIG_MACH_NEO1973_GTA02 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c24xx/mach-h1940.c : CONFIG_ARCH_H1940 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c24xx/mach-mini2440.c : CONFIG_MACH_MINI2440 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c24xx/mach-n30.c : CONFIG_MACH_N30 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c24xx/mach-rx1950.c : CONFIG_MACH_RX1950 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c64xx/mach-crag6410.c : CONFIG_MACH_WLF_CRAGG_6410 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c64xx/mach-smartq5.c : CONFIG_MACH_SMARTQ5 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-s3c64xx/mach-smartq7.c : CONFIG_MACH_SMARTQ7 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-sa1100/collie.c : CONFIG_SA1100_COLLIE : none
+-dDcC--H----- : /gpio-keys : gpio-keys : arch/arm/mach-sa1100/h3xxx.c : CONFIG_SA1100_H3100 : none
+-dDcC--H----- : /gpio-keys : gpio-keys : arch/arm/mach-sa1100/h3xxx.c : CONFIG_SA1100_H3600 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/arm/mach-sa1100/simpad.c : CONFIG_SA1100_SIMPAD : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/avr32/boards/atngw100/mrmt.c : CONFIG_BOARD_ATNGW100_MRMT : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf518/boards/ezbrd.c : CONFIG_BFIN518F_EZBRD : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf518/boards/tcm-bf518.c : CONFIG_BFIN518F_TCM : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf527/boards/cm_bf527.c : CONFIG_BFIN527_BLUETECHNIX_CM : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf527/boards/ezbrd.c : CONFIG_BFIN526_EZBRD : none
+-dDcC--H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf527/boards/ezkit.c : CONFIG_BFIN527_EZKIT : none
+-dDcC--H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf527/boards/ezkit.c : CONFIG_BFIN527_EZKIT_V2 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf533/boards/blackstamp.c : CONFIG_BLACKSTAMP : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf533/boards/ezkit.c : CONFIG_BFIN533_EZKIT : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf533/boards/stamp.c : CONFIG_BFIN533_STAMP : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf537/boards/stamp.c : CONFIG_BFIN537_STAMP : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf538/boards/ezkit.c : CONFIG_BFIN538_EZKIT : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf548/boards/cm_bf548.c : CONFIG_BFIN548_BLUETECHNIX_CM : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf548/boards/ezkit.c : CONFIG_BFIN548_EZKIT : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf561/boards/ezkit.c : CONFIG_BFIN561_EZKIT : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/blackfin/mach-bf609/boards/ezkit.c : CONFIG_BFIN609_EZKIT : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/mips/alchemy/board-mtx1.c : CONFIG_MIPS_MTX1 : none
+-dDc---Hx---- : /gpio-keys : gpio-keys : arch/mips/alchemy/devboards/db1300.c : obj-y : none
+-dDc---Hx---- : /gpio-keys : gpio-keys : arch/mips/bcm47xx/buttons.c : obj-y : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/mips/jz4740/board-qi_lb60.c : CONFIG_JZ4740_QI_LB60 : none
+-dDc---Hx---- : /gpio-keys : gpio-keys : arch/sh/boards/mach-x3proto/setup.c : obj-y : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/unicore32/kernel/puv3-nb0916.c : CONFIG_PUV3_NB0916 : none
+-dDc---H----- : /gpio-keys : gpio-keys : arch/x86/platform/intel-mid/device_libs/platform_gpio_keys.c : CONFIG_KEYBOARD_GPIO : none
+-dDc---H----- : /gpio-keys : gpio-keys : drivers/input/keyboard/gpio_keys.c : CONFIG_KEYBOARD_GPIO : none
+-dDc---H----- : /gpio-keys : gpio-keys : drivers/input/misc/soc_button_array.c : CONFIG_INPUT_SOC_BUTTON_ARRAY : none
+-dDc---H----- : /gpio-keys : gpio-keys : drivers/mfd/ucb1x00-assabet.c : CONFIG_SA1100_ASSABET && CONFIG_MCP_UCB1200 : none
+
+-d-c----x---- : /lcm : mediatek,lcm : drivers/misc/mediatek/lcm/nt35595_fhd_dsi_cmd_truly_8163/nt35595_fhd_dsi_cmd_truly_8163.c : obj-y : none
+
+------------- : /mt8167_audio_codec : mediatek,mt8167-codec : no_driver : no_config : none
+
+------------- : /mtcpufreq : mediatek,mt8167-cpufreq : no_driver : no_config : none
+
+-dDc----x---- : /opp_table0 : operating-points-v2 : drivers/base/power/opp/core.c : obj-y : none
+-dDc--------- : /opp_table0 : operating-points-v2 : drivers/cpufreq/cpufreq-dt.c : CONFIG_CPUFREQ_DT : none
+-dDc--------- : /opp_table0 : operating-points-v2 : drivers/misc/mediatek/base/power/mt8167/mt8167-cpufreq.c : CONFIG_MACH_MT8167 : none
+
+-d-c----x---- : /panel@0 : cpt,clap070wp03xg_lvds : drivers/misc/mediatek/lcm/clap070wp03xg_lvds/clap070wp03xg_lvds.c : obj-y : none
+
+-d-c--------- : /pmu : arm,armv8-pmuv3 : arch/arm64/kernel/perf_event.c : CONFIG_HW_PERF_EVENTS : none
+
+-d-c--------- : /psci : arm,psci-0.2 : drivers/firmware/psci.c : CONFIG_ARM_PSCI_FW : none
+
+------------- : /reserved-memory/atf-reserved-memory@43000000 : mediatek,mt8167-atf-reserved-memory : no_driver : no_config : none
+
+-d-c--------- : /reserved-memory/minirdump-reserved-memory@444f0000 : mediatek,minirdump : drivers/misc/mediatek/aee/mrdump/mrdump_mini.c : CONFIG_MTK_AEE_IPANIC : none
+
+------------- : /reserved-memory/mtee-reserved-memory : mediatek,mt8167-mtee-reserved-memory : no_driver : no_config : none
+
+-d-c--------- : /reserved-memory/ram_console-reserved-memory@44400000 : mediatek,ram_console : drivers/misc/mediatek/ram_console/mtk_ram_console.c : CONFIG_MTK_RAM_CONSOLE : none
+
+------W------ : /soc : simple-bus : no_driver : no_config : none
+
+-dDc--------- : /soc/BAT_NOTIFY : mediatek,bat_notify : drivers/power/mediatek/battery_common.c : CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_SMART_BATTERY : none
+-dDc--------- : /soc/BAT_NOTIFY : mediatek,bat_notify : drivers/power/mediatek/battery_common_fg_20.c : !CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_SMART_BATTERY : none
+
+-d-c-E------- : /soc/accdet@1001b000 : mediatek,mt8167-accdet : drivers/misc/mediatek/accdet/accdet_drv.c : CONFIG_MTK_ACCDET : none
+
+-dDc----x---- : /soc/als_ps@0 : mediatek,als_ps : drivers/misc/mediatek/alsps/alsps.c : obj-y : none
+-dDc----x---- : /soc/als_ps@0 : mediatek,als_ps : drivers/misc/mediatek/alsps/cm36558/cm36558.c : obj-y : none
+-dDc--------- : /soc/als_ps@0 : mediatek,als_ps : drivers/misc/mediatek/alsps/cm36652-new/cm36652.c : CONFIG_MTK_CM36652_NEW : none
+-dDc----x---- : /soc/als_ps@0 : mediatek,als_ps : drivers/misc/mediatek/sensor_bio/alsps/alsps.c : obj-y : none
+-dDc----x---- : /soc/als_ps@0 : mediatek,als_ps : drivers/misc/mediatek/sensor_bio/alsps/cm36558/cm36558.c : obj-y : none
+
+MdDc--------- : /soc/apmixedsys@10018000 : mediatek,mt8167-apmixedsys : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc----x---- : /soc/apmixedsys@10018000 : mediatek,mt8167-apmixedsys : drivers/misc/mediatek/freqhopping/mt8167/mtk_freqhopping.c : obj-y : none
+MdDc----x---- : /soc/apmixedsys@10018000 : mediatek,mt8167-apmixedsys : drivers/misc/mediatek/hdmi/hdmitx/mt8167/hdmi_drv.c : CONFIG_MTK_INTERNAL_HDMI_SUPPORT && obj-y : none
+MdDc----x---- : /soc/apmixedsys@10018000 : mediatek,mt8167-apmixedsys : drivers/mmc/host/mediatek/mt8167/msdc_io.c : msdc-y : none
+MdDc---Hx---- : /soc/apmixedsys@10018000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/apmixedsys@10018000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/apmixedsys@10018000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/apmixedsys@10018000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/apmixedsys@10018000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/apmixedsys@10018000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/apmixedsys@10018000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/apmixedsys@10018000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+-d-c----x---- : /soc/audio-controller@11140000 : mediatek,mt8167-afe-pcm : sound/soc/mediatek/mt8167/mt8167-afe-pcm.c : snd-soc-mt8167-pcm-objs : none
+
+MdDc--------- : /soc/audiotop@11140000 : mediatek,mt8167-audiotop : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc----x---- : /soc/audiotop@11140000 : mediatek,mt8167-audiotop : drivers/misc/mediatek/base/power/mt8167/mtk_idle.c : obj-y : none
+MdDc---Hx---- : /soc/audiotop@11140000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/audiotop@11140000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/audiotop@11140000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/audiotop@11140000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/audiotop@11140000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/audiotop@11140000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/audiotop@11140000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/audiotop@11140000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+-dDc--------- : /soc/auxadc@11003000 : mediatek,mt8167-auxadc : drivers/misc/mediatek/auxadc/mtk_auxadc.c : CONFIG_MTK_AUXADC : none
+-dDc----x---- : /soc/auxadc@11003000 : mediatek,mt8167-auxadc : drivers/misc/mediatek/base/power/mt8167/mtk_cpuidle.c : obj-y : none
+-dDc--------- : /soc/auxadc@11003000 : mediatek,mt8167-auxadc : drivers/misc/mediatek/thermal/mt8167/mtk_ts_cpu.c : CONFIG_THERMAL : none
+
+-dDc----x---- : /soc/barometer@0 : mediatek,barometer : drivers/misc/mediatek/barometer/BMP280-new/bmp280.c : obj-y : none
+-dDc----x---- : /soc/barometer@0 : mediatek,barometer : drivers/misc/mediatek/barometer/barometer.c : obj-y : none
+-dDc----x---- : /soc/barometer@0 : mediatek,barometer : drivers/misc/mediatek/sensor_bio/barometer/barometer.c : obj-y : none
+
+-dDc--------- : /soc/bat_comm : mediatek,battery : drivers/power/mediatek/battery_common.c : CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_SMART_BATTERY : none
+-dDc--------- : /soc/bat_comm : mediatek,battery : drivers/power/mediatek/battery_common_fg_20.c : !CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_SMART_BATTERY : none
+
+-dDc--------- : /soc/bat_meter : mediatek,bat_meter : drivers/power/mediatek/battery_meter.c : CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_SMART_BATTERY : none
+-dDc--------- : /soc/bat_meter : mediatek,bat_meter : drivers/power/mediatek/battery_meter_fg_20.c : !CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_GAUGE_VERSION && CONFIG_MTK_SMART_BATTERY : none
+
+------------- : /soc/batchsensor@0 : mediatek,batchsensor : no_driver : no_config : none
+
+-d-c--------- : /soc/btcvsd@10001000 : mediatek,audio_bt_cvsd : sound/soc/mediatek/common/mtk-soc-pcm-btcvsd-rx.c : CONFIG_MTK_BTCVSD_ALSA : none
+
+-d-c----x---- : /soc/camera1@15008000 : mediatek,mt8167-camera_hw : drivers/misc/mediatek/imgsensor/src/mt8167/kd_sensorlist.c : obj-y : none
+
+-d-c----x---- : /soc/camera2@15008000 : mediatek,mt8167-camera_hw2 : drivers/misc/mediatek/imgsensor/src/mt8167/kd_sensorlist.c : obj-y : none
+
+M------------ : /soc/cec@0x1001a000 : mediatek,mt8167-cec : no_driver : no_config : none
+MdDc----x---- : /soc/cec@0x1001a000 : mediatek,mt8173-cec : drivers/gpu/drm/mediatek/mtk_cec.c : mediatek-drm-hdmi-objs : none
+MdDc----x---- : /soc/cec@0x1001a000 : mediatek,mt8173-cec : drivers/gpu/drm/mediatek/mtk_hdmi.c : mediatek-drm-hdmi-objs : none
+
+-d-c----x---- : /soc/chipid@08000000 : mediatek,chipid : drivers/misc/mediatek/chip/mt8167/mtk_chip.c : CHIP-y : none
+
+-d-c--------- : /soc/clark@13000000 : mediatek,mt8167-clark : drivers/misc/mediatek/base/power/mt8167/mtk_gpufreq.c : CONFIG_MTK_GPU_SUPPORT : none
+
+-d-c----x---- : /soc/codec@15009000 : mediatek,mt8167-vcodec-enc : drivers/media/platform/mtk-vcodec/mtk_vcodec_enc_drv.c : mtk-vcodec-enc-y : none
+
+-d-c----x---- : /soc/codec@16000000 : mediatek,mt8167-vcodec-dec : drivers/media/platform/mtk-vcodec/mtk_vcodec_dec_drv.c : mtk-vcodec-dec-y : none
+
+MdDc----x---- : /soc/ddrphy@10211000 : mediatek,mt8167-ddrphy : drivers/misc/mediatek/cameraisp/src/mt8167/camera_isp.c : obj-y : none
+MdDc----x---- : /soc/ddrphy@10211000 : mediatek,mt8167-ddrphy : drivers/misc/mediatek/dramc/mt8167/mtk_dramc.c : obj-y : none
+MdDc----x---- : /soc/ddrphy@10211000 : mediatek,mt8167-ddrphy : drivers/misc/mediatek/freqhopping/mt8167/mtk_freqhopping.c : obj-y : none
+Md-cC---x---- : /soc/ddrphy@10211000 : mediatek,ddrphy : drivers/misc/mediatek/base/power/spm_v2/mtk_spm.c : CONFIG_MACH_MT6757 && obj-y : none
+Md-cC---x---- : /soc/ddrphy@10211000 : mediatek,ddrphy : drivers/misc/mediatek/base/power/spm_v2/mtk_spm.c : CONFIG_MACH_KIBOPLUS && obj-y : none
+
+-d-c----x---- : /soc/devapc@10204000 : mediatek,mt8167-devapc : drivers/misc/mediatek/devapc/mt8167/devapc.c : obj-y : none
+
+-d-c----x---- : /soc/devapc_ao@10010000 : mediatek,mt8167-devapc_ao : drivers/misc/mediatek/devapc/mt8167/devapc.c : obj-y : none
+
+-d-c----x---- : /soc/disp_aal@1400e000 : mediatek,mt8167-disp-aal : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-d-c----x---- : /soc/disp_ccorr@1400d000 : mediatek,mt8167-disp-ccorr : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-dDc----x---- : /soc/disp_color@1400c000 : mediatek,mt8167-disp-color : drivers/gpu/drm/mediatek/mtk_drm_ddp_comp.c : mediatek-drm-y : none
+-dDc----x---- : /soc/disp_color@1400c000 : mediatek,mt8167-disp-color : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-d-c----x---- : /soc/disp_dither@14010000 : mediatek,mt8167-disp-dither : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-dDc-E--x---- : /soc/disp_dpi0@14013000 : mediatek,mt8167-dpi : drivers/gpu/drm/mediatek/mtk_dpi.c : mediatek-drm-y : none
+-dDc-E--x---- : /soc/disp_dpi0@14013000 : mediatek,mt8167-dpi : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-dDc----x---- : /soc/disp_dpi1@14019000 : mediatek,mt8167-dpi : drivers/gpu/drm/mediatek/mtk_dpi.c : mediatek-drm-y : none
+-dDc----x---- : /soc/disp_dpi1@14019000 : mediatek,mt8167-dpi : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-dDc-E--x---- : /soc/disp_dsi0@14012000 : mediatek,mt8167-dsi : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+-dDc-E--x---- : /soc/disp_dsi0@14012000 : mediatek,mt8167-dsi : drivers/gpu/drm/mediatek/mtk_dsi.c : mediatek-drm-y : none
+
+-d-c----x---- : /soc/disp_gamma@1400f000 : mediatek,mt8167-disp-gamma : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-d-c----x---- : /soc/disp_lvds_ana@14018800 : mediatek,mt8167-disp_lvds_ana : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-d-c----x---- : /soc/disp_lvds_tx@1401a200 : mediatek,mt8167-disp_lvds_tx : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-dDc----x---- : /soc/disp_ovl0@14007000 : mediatek,mt8167-disp-ovl : drivers/gpu/drm/mediatek/mtk_disp_ovl.c : mediatek-drm-y : none
+-dDc----x---- : /soc/disp_ovl0@14007000 : mediatek,mt8167-disp-ovl : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-dDc----x---- : /soc/disp_pwm0@1100f000 : mediatek,mt8167-disp-pwm : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+-dDc--------- : /soc/disp_pwm0@1100f000 : mediatek,mt8167-disp-pwm : drivers/pwm/pwm-mtk-disp.c : CONFIG_PWM_MTK_DISP : none
+
+-dDc----x---- : /soc/disp_rdma0@14009000 : mediatek,mt8167-disp-rdma : drivers/gpu/drm/mediatek/mtk_disp_rdma.c : mediatek-drm-y : none
+-dDc----x---- : /soc/disp_rdma0@14009000 : mediatek,mt8167-disp-rdma : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-dDc----x---- : /soc/disp_rdma1@1400a000 : mediatek,mt8167-disp-rdma : drivers/gpu/drm/mediatek/mtk_disp_rdma.c : mediatek-drm-y : none
+-dDc----x---- : /soc/disp_rdma1@1400a000 : mediatek,mt8167-disp-rdma : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-d-c----x---- : /soc/disp_wdma0@1400b000 : mediatek,mt8167-disp-wdma : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+M------------ : /soc/dma-controller@11000480 : mediatek,mt8167-uart-dma : no_driver : no_config : none
+Md-c--------- : /soc/dma-controller@11000480 : mediatek,mt6577-uart-dma : drivers/dma/8250_mtk_dma.c : CONFIG_DMA_MTK_UART : none
+
+Md-c----x---- : /soc/dramc_nao@10206000 : mediatek,mt8167-dramc_nao : drivers/misc/mediatek/dramc/mt8167/mtk_dramc.c : obj-y : none
+M------------ : /soc/dramc_nao@10206000 : mediatek,dramc_nao : no_driver : no_config : none
+
+-d-c----x---- : /soc/dramco@10207000 : mediatek,mt8167-dramco : drivers/misc/mediatek/dramc/mt8167/mtk_dramc.c : obj-y : none
+
+-d-c----x---- : /soc/dumchar : mediatek,mt8167-dummy_char : drivers/misc/mediatek/dum-char/v2/dumchar.c : obj-y : none
+
+-d-c-E------- : /soc/ecc@11002000 : mediatek,mt8167-ecc : drivers/mtd48/nand/mtk_ecc.c : CONFIG_MTD_NAND_MTK : none
+
+M------------ : /soc/efuse@10009000 : mediatek,mt8167-efuse : no_driver : no_config : none
+Md-c----x---- : /soc/efuse@10009000 : mediatek,efuse : drivers/nvmem/mtk-efuse.c : nvmem_mtk-efuse-y : none
+
+MdDc--------- : /soc/emi@10205000 : mediatek,mt8167-emi : drivers/misc/mediatek/base/power/mt8167/mtk_dcm.c : CONFIG_MACH_MT8167 : none
+MdDc----x---- : /soc/emi@10205000 : mediatek,mt8167-emi : drivers/misc/mediatek/emi_bwl/mt8167/emi_bwl.c : obj-y : none
+MdDc----x---- : /soc/emi@10205000 : mediatek,emi : drivers/misc/mediatek/base/power/dcm_v1/mtk_dcm.c : obj-y : none
+MdDc----x---- : /soc/emi@10205000 : mediatek,emi : drivers/misc/mediatek/base/power/spm_v3/mtk_spm.c : CONFIG_MACH_MT6799 && obj-y : none
+
+-dD---------- : /soc/extd_drv@0 : mediatek,extd_dev : drivers/misc/mediatek/ext_disp/mtk_extd_mgr.c : no_config : none
+-dDc----x---- : /soc/extd_drv@0 : mediatek,extd_dev : drivers/misc/mediatek/hdmi/ANX7805/slimport_platform.c : obj-y : none
+-dDc----x---- : /soc/extd_drv@0 : mediatek,extd_dev : drivers/misc/mediatek/hdmi/Sii8348/platform.c : obj-y : none
+
+-d-c----x---- : /soc/fhctl@10018f00 : mediatek,mt8167-fhctl : drivers/misc/mediatek/freqhopping/mt8167/mtk_freqhopping.c : obj-y : none
+
+-d-c----x---- : /soc/g3d_iommu@13005000 : mediatek,mt8167-g3d_iommu : drivers/misc/mediatek/m4u/mt8167/m4u.c : obj-y : none
+
+-dDc--------- : /soc/gce@1020a000 : mediatek,mt8167-gce : drivers/mailbox/mtk-cmdq-mailbox.c : CONFIG_MTK_CMDQ_MBOX : none
+-dDc----x---- : /soc/gce@1020a000 : mediatek,mt8167-gce : drivers/misc/mediatek/cmdq/v2/cmdq_driver.c : obj-y : none
+-dDc----x---- : /soc/gce@1020a000 : mediatek,mt8167-gce : drivers/misc/mediatek/cmdq/v2/mt8167/cmdq_mdp.c : obj-y : none
+
+-d-c--------- : /soc/gps : mediatek,gps : drivers/misc/mediatek/connectivity/gps/gps.c : CONFIG_MTK_GPS : none
+
+-dDc----x---- : /soc/gsensor@0 : mediatek,gsensor : drivers/misc/mediatek/accelerometer/accel.c : obj-y : none
+-dDc----x---- : /soc/gsensor@0 : mediatek,gsensor : drivers/misc/mediatek/accelerometer/bma2xx/bma2xx.c : obj-y : none
+-dDc----x---- : /soc/gsensor@0 : mediatek,gsensor : drivers/misc/mediatek/accelerometer/bmi160-spi/bmi160_acc.c : obj-y : none
+-dDc----x---- : /soc/gsensor@0 : mediatek,gsensor : drivers/misc/mediatek/accelerometer/lsm6ds3hg/lsm6ds3hg.c : obj-y : none
+-dDc----x---- : /soc/gsensor@0 : mediatek,gsensor : drivers/misc/mediatek/accelerometer/mc3433/mc3433.c : obj-y : none
+-dDc----x---- : /soc/gsensor@0 : mediatek,gsensor : drivers/misc/mediatek/sensor_bio/accelerometer/accel.c : obj-y : none
+
+-dDc----x---- : /soc/gyroscope@0 : mediatek,gyroscope : drivers/misc/mediatek/gyroscope/gyroscope.c : obj-y : none
+-dDc----x---- : /soc/gyroscope@0 : mediatek,gyroscope : drivers/misc/mediatek/sensor_bio/gyroscope/gyroscope.c : obj-y : none
+
+-d----------- : /soc/hacc@1000a000 : mediatek,hacc : drivers/misc/mediatek/masp/asfv2/module/sec_mod.c : no_makefile : none
+
+-d-c----x---- : /soc/hdmi-phy@10018300 : mediatek,mt2701-hdmi-phy : drivers/gpu/drm/mediatek/mtk_mt2701_hdmi_phy.c : mediatek-drm-hdmi-objs : none
+
+-d-c----x---- : /soc/hdmi@1401b000 : mediatek,mt8173-hdmi : drivers/gpu/drm/mediatek/mtk_hdmi.c : mediatek-drm-hdmi-objs : none
+
+------------- : /soc/hwmsensor@0 : mediatek,hwmsensor : no_driver : no_config : none
+
+M------------ : /soc/i2c@0x11011000 : mediatek,mt8167-hdmi-ddc : no_driver : no_config : none
+Md-c----x---- : /soc/i2c@0x11011000 : mediatek,mt8173-hdmi-ddc : drivers/gpu/drm/mediatek/mtk_hdmi_ddc.c : mediatek-drm-hdmi-objs : none
+
+-d-c--------- : /soc/i2c@11009000 : mediatek,mt8167-i2c : drivers/i2c/busses/i2c-mt65xx.c : CONFIG_I2C_MT65XX : none
+
+------------- : /soc/i2c@11009000/lp8557_led@2c : ti,lp8557-led : no_driver : no_config : none
+
+------------- : /soc/i2c@11009000/strobe_main@63 : mediatek,strobe_main : no_driver : no_config : none
+
+-d-c-E------- : /soc/i2c@1100a000 : mediatek,mt8167-i2c : drivers/i2c/busses/i2c-mt65xx.c : CONFIG_I2C_MT65XX : none
+
+-d-c-E------- : /soc/i2c@1100b000 : mediatek,mt8167-i2c : drivers/i2c/busses/i2c-mt65xx.c : CONFIG_I2C_MT65XX : none
+
+M------------ : /soc/ice_debug : mediatek,mt8167-ice_debug : no_driver : no_config : none
+Md-c--------- : /soc/ice_debug : mediatek,mt8173-ice_debug : drivers/misc/mediatek/ice_debug/ice_debug.c : CONFIG_MTK_ICE_DEBUG : none
+
+MdDc--------- : /soc/imgsys@15000000 : mediatek,mt8167-imgsys : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc----x---- : /soc/imgsys@15000000 : mediatek,mt8167-imgsys : drivers/misc/mediatek/base/power/mt8167/mtk_idle.c : obj-y : none
+MdDc---Hx---- : /soc/imgsys@15000000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/imgsys@15000000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/imgsys@15000000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/imgsys@15000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/imgsys@15000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/imgsys@15000000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/imgsys@15000000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/imgsys@15000000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+MdDc--------- : /soc/infracfg@10001000 : mediatek,mt8167-infracfg : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc--------- : /soc/infracfg@10001000 : mediatek,mt8167-infracfg : drivers/misc/mediatek/base/power/mt8167/mtk_dcm.c : CONFIG_MACH_MT8167 : none
+MdDc----x---- : /soc/infracfg@10001000 : mediatek,mt8167-infracfg : drivers/misc/mediatek/hdmi/hdmitx/mt8167/hdmi_drv.c : CONFIG_MTK_INTERNAL_HDMI_SUPPORT && obj-y : none
+MdDc--------- : /soc/infracfg@10001000 : mediatek,mt8167-infracfg : drivers/misc/mediatek/thermal/mt8167/mtk_ts_cpu.c : CONFIG_THERMAL : none
+MdDc----x---- : /soc/infracfg@10001000 : mediatek,mt8167-infracfg : drivers/mmc/host/mediatek/mt8167/msdc_io.c : msdc-y : none
+MdDc---Hx---- : /soc/infracfg@10001000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/infracfg@10001000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/infracfg@10001000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/infracfg@10001000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/infracfg@10001000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/infracfg@10001000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/infracfg@10001000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/infracfg@10001000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+-dDc--------- : /soc/interrupt-controller@10310000 : arm,gic-400 : drivers/irqchip/irq-gic.c : CONFIG_ARM_GIC : none
+-dDc----x---- : /soc/interrupt-controller@10310000 : arm,gic-400 : drivers/misc/mediatek/base/power/mt8167/mtk_cpuidle.c : obj-y : none
+-dDc--------- : /soc/interrupt-controller@10310000 : arm,gic-400 : drivers/misc/mediatek/ext_gic/mtk-gic-extend.c : !CONFIG_MTK_GIC_V3_EXT && CONFIG_MTK_GIC_EXT : none
+-dD---------- : /soc/interrupt-controller@10310000 : arm,gic-400 : virt/kvm/arm/vgic.c : no_makefile : none
+
+M------------ : /soc/intpol-controller@10200620 : mediatek,mt8167-sysirq : no_driver : no_config : none
+MdDc--------- : /soc/intpol-controller@10200620 : mediatek,mt6577-sysirq : drivers/irqchip/irq-mtk-sysirq.c : CONFIG_ARCH_MEDIATEK : none
+MdDc--------- : /soc/intpol-controller@10200620 : mediatek,mt6577-sysirq : drivers/misc/mediatek/ext_gic/mtk-gic-extend.c : !CONFIG_MTK_GIC_V3_EXT && CONFIG_MTK_GIC_EXT : none
+
+-d-c-E--x---- : /soc/irrx@0x10019000 : mediatek,mt8167-irrx : drivers/misc/mediatek/irrx/mtk_ir_core.c : obj-y : none
+
+-d-c----x---- : /soc/isp_display : mediatek,mt8167-isp_display : drivers/misc/mediatek/cameraisp/src/mt8167/camera_isp.c : obj-y : none
+
+-d-c----x---- : /soc/isp_pipemgr : mediatek,mt8167-isp_pipemgr : drivers/misc/mediatek/cameraisp/src/mt8167/camera_pipe_mgr.c : obj-y : none
+
+-d-c----x---- : /soc/isp_sysram : mediatek,mt8167-isp_sysram : drivers/misc/mediatek/cameraisp/src/mt8167/camera_sysram.c : obj-y : none
+
+-d-c----x---- : /soc/ispsys@15000000 : mediatek,mt8167-ispsys : drivers/misc/mediatek/cameraisp/src/mt8167/camera_isp.c : obj-y : none
+
+-dDc--------- : /soc/keypad@10002000 : mediatek,mt8167-keypad : drivers/input/keyboard/mediatek/kpd.c : CONFIG_KEYBOARD_MTK : none
+-dDc----x---- : /soc/keypad@10002000 : mediatek,mt8167-keypad : drivers/misc/mediatek/base/power/mt8167/mtk_cpuidle.c : obj-y : none
+
+-dDc--------- : /soc/larb@14016000 : mediatek,mt8167-smi-larb : drivers/memory/mtk-smi.c : CONFIG_MTK_SMI : none
+-dDc----x---- : /soc/larb@14016000 : mediatek,mt8167-smi-larb : drivers/misc/mediatek/smi/variant/smi_variant.c : obj-y : none
+-dDc----x---- : /soc/larb@14016000 : mediatek,mt8167-smi-larb : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-dDc--------- : /soc/larb@15001000 : mediatek,mt8167-smi-larb : drivers/memory/mtk-smi.c : CONFIG_MTK_SMI : none
+-dDc----x---- : /soc/larb@15001000 : mediatek,mt8167-smi-larb : drivers/misc/mediatek/smi/variant/smi_variant.c : obj-y : none
+-dDc----x---- : /soc/larb@15001000 : mediatek,mt8167-smi-larb : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-dDc--------- : /soc/larb@16010000 : mediatek,mt8167-smi-larb : drivers/memory/mtk-smi.c : CONFIG_MTK_SMI : none
+-dDc----x---- : /soc/larb@16010000 : mediatek,mt8167-smi-larb : drivers/misc/mediatek/smi/variant/smi_variant.c : obj-y : none
+-dDc----x---- : /soc/larb@16010000 : mediatek,mt8167-smi-larb : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+------------- : /soc/led@0 : mediatek,red : no_driver : no_config : none
+
+------------- : /soc/led@1 : mediatek,green : no_driver : no_config : none
+
+------------- : /soc/led@2 : mediatek,blue : no_driver : no_config : none
+
+------------- : /soc/led@3 : mediatek,jogball-backlight : no_driver : no_config : none
+
+------------- : /soc/led@4 : mediatek,keyboard-backlight : no_driver : no_config : none
+
+------------- : /soc/led@5 : mediatek,button-backlight : no_driver : no_config : none
+
+-dDc--------- : /soc/led@6 : mediatek,lcd-backlight : drivers/misc/mediatek/leds/mtk_leds_drv.c : CONFIG_MTK_LEDS : none
+-dDc----x---- : /soc/led@6 : mediatek,lcd-backlight : drivers/misc/mediatek/video/common/aal20/ddp_aal.c : obj-y : none
+-dDc----x---- : /soc/led@6 : mediatek,lcd-backlight : drivers/misc/mediatek/video/common/aal30/ddp_aal.c : obj-y : none
+-dDc----x---- : /soc/led@6 : mediatek,lcd-backlight : drivers/misc/mediatek/video/common/pwm10/ddp_pwm.c : obj-y : none
+
+-dDc--------- : /soc/m4u@10203000 : mediatek,mt8167-m4u : drivers/iommu/mtk_iommu_mt8167.c : CONFIG_ARM64 && CONFIG_MACH_MT8167 && CONFIG_MTK_IOMMU : none
+-dDc--------- : /soc/m4u@10203000 : mediatek,mt8167-m4u : drivers/iommu/mtk_iommu_mt8167_32b.c : !CONFIG_ARM64 && CONFIG_MACH_MT8167 && CONFIG_MTK_IOMMU : none
+-dDc----x---- : /soc/m4u@10203000 : mediatek,mt8167-m4u : drivers/misc/mediatek/m4u/mt8167/m4u.c : obj-y : none
+
+MdDc--------- : /soc/mcucfg@10200000 : mediatek,mt8167-mcucfg : drivers/misc/mediatek/base/power/mt8167/mtk_dcm.c : CONFIG_MACH_MT8167 : none
+MdDc----x---- : /soc/mcucfg@10200000 : mediatek,mt8167-mcucfg : drivers/misc/mediatek/debug_latch/lastpc/lastpc.c : obj-y : none
+MdDc----x---- : /soc/mcucfg@10200000 : mediatek,mt8167-mcucfg : drivers/misc/mediatek/hdmi/hdmitx/mt8167/hdmi_drv.c : CONFIG_MTK_INTERNAL_HDMI_SUPPORT && obj-y : none
+MdDc---Hx---- : /soc/mcucfg@10200000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/mcucfg@10200000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/mcucfg@10200000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/mcucfg@10200000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/mcucfg@10200000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/mcucfg@10200000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/mcucfg@10200000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/mcucfg@10200000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+------------- : /soc/met_smi@14017000 : mediatek,met_smi : no_driver : no_config : none
+
+MdDc--------- : /soc/mfgcfg@13ffe000 : mediatek,mt8167-mfgcfg : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc----x---- : /soc/mfgcfg@13ffe000 : mediatek,mt8167-mfgcfg : drivers/misc/mediatek/base/power/mt8167/mtk_idle.c : obj-y : none
+MdDc---Hx---- : /soc/mfgcfg@13ffe000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/mfgcfg@13ffe000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/mfgcfg@13ffe000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/mfgcfg@13ffe000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+-dD---------- : /soc/mfgsys-2d : mediatek,mt8167-mfg-2d : drivers/misc/mediatek/gpu/gpu_rgx/m1.8ED4333936/services/system/rgx_mt8167/mtk_mfgsys.c : no_makefile : none
+-dD---------- : /soc/mfgsys-2d : mediatek,mt8167-mfg-2d : drivers/misc/mediatek/gpu/gpu_rgx/m1.8ED4490469/services/system/rgx_mt8167/mtk_mfgsys.c : no_makefile : none
+-dD---------- : /soc/mfgsys-2d : mediatek,mt8167-mfg-2d : drivers/misc/mediatek/gpu/gpu_rgx/m1.9ED4893595/services/system/rgx_mtk/mt8167/mtk_mfgsys.c : no_makefile : none
+-dD---------- : /soc/mfgsys-2d : mediatek,mt8167-mfg-2d : drivers/misc/mediatek/gpu/gpu_rgx/m1.9ED4917962/services/system/rgx_mtk/mt8167/mtk_mfgsys.c : no_makefile : none
+
+-dD---------- : /soc/mfgsys-async : mediatek,mt8167-mfg-async : drivers/misc/mediatek/gpu/gpu_rgx/m1.8ED4333936/services/system/rgx_mt8167/mtk_mfgsys.c : no_makefile : none
+-dD---------- : /soc/mfgsys-async : mediatek,mt8167-mfg-async : drivers/misc/mediatek/gpu/gpu_rgx/m1.8ED4490469/services/system/rgx_mt8167/mtk_mfgsys.c : no_makefile : none
+-dD---------- : /soc/mfgsys-async : mediatek,mt8167-mfg-async : drivers/misc/mediatek/gpu/gpu_rgx/m1.9ED4893595/services/system/rgx_mtk/mt8167/mtk_mfgsys.c : no_makefile : none
+-dD---------- : /soc/mfgsys-async : mediatek,mt8167-mfg-async : drivers/misc/mediatek/gpu/gpu_rgx/m1.9ED4917962/services/system/rgx_mtk/mt8167/mtk_mfgsys.c : no_makefile : none
+
+-d-c----x---- : /soc/mipi_dphy@14018000 : mediatek,mt8167-mipi-tx : drivers/gpu/drm/mediatek/mtk_mipi_tx.c : mediatek-drm-y : none
+
+-dDc----x---- : /soc/mm_mutex@14015000 : mediatek,mt8167-disp-mutex : drivers/gpu/drm/mediatek/mtk_drm_ddp.c : mediatek-drm-y : none
+-dDc----x---- : /soc/mm_mutex@14015000 : mediatek,mt8167-disp-mutex : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+
+-d-cC-------- : /soc/mmc@11120000 : mediatek,mt8167-mmc : drivers/mmc/host/mtk-sd.c : CONFIG_MMC_MTK : none
+-d-cC-------- : /soc/mmc@11120000 : mediatek,mt8167-mmc : drivers/mmc/host/mtk-sd.c : CONFIG_MMC_MTK_COMM_SDIO : none
+
+-d-cCE------- : /soc/mmc@11130000 : mediatek,mt8167-mmc : drivers/mmc/host/mtk-sd.c : CONFIG_MMC_MTK : none
+-d-cCE------- : /soc/mmc@11130000 : mediatek,mt8167-mmc : drivers/mmc/host/mtk-sd.c : CONFIG_MMC_MTK_COMM_SDIO : none
+
+MdDc--------- : /soc/mmsys@14000000 : mediatek,mt8167-mmsys : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc----x---- : /soc/mmsys@14000000 : mediatek,mt8167-mmsys : drivers/gpu/drm/mediatek/mtk_drm_drv.c : mediatek-drm-y : none
+MdDc----x---- : /soc/mmsys@14000000 : mediatek,mt8167-mmsys : drivers/misc/mediatek/base/power/mt8167/mtk_idle.c : obj-y : none
+MdDc----x---- : /soc/mmsys@14000000 : mediatek,mt8167-mmsys : drivers/misc/mediatek/cmdq/v2/mt8167/cmdq_mdp.c : obj-y : none
+MdDc----x---- : /soc/mmsys@14000000 : mediatek,mt8167-mmsys : drivers/misc/mediatek/hdmi/hdmitx/mt8167/hdmi_drv.c : CONFIG_MTK_INTERNAL_HDMI_SUPPORT && obj-y : none
+MdDc----x---- : /soc/mmsys@14000000 : mediatek,mt8167-mmsys : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+MdDc---Hx---- : /soc/mmsys@14000000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/mmsys@14000000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/mmsys@14000000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/mmsys@14000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/mmsys@14000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/mmsys@14000000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/mmsys@14000000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/mmsys@14000000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+-dDc----x---- : /soc/msensor@0 : mediatek,msensor : drivers/misc/mediatek/magnetometer/akm09911-new/akm09911.c : obj-y : none
+-dDc----x---- : /soc/msensor@0 : mediatek,msensor : drivers/misc/mediatek/magnetometer/akm09915-new/akm09915.c : obj-y : none
+-dDc----x---- : /soc/msensor@0 : mediatek,msensor : drivers/misc/mediatek/magnetometer/mag.c : obj-y : none
+-dDc----x---- : /soc/msensor@0 : mediatek,msensor : drivers/misc/mediatek/sensor_bio/magnetometer/mag.c : obj-y : none
+
+-d-c----x---- : /soc/mt8167-dispsys : mediatek,mt8167-dispsys : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-d-c--------- : /soc/mt_soc_btcvsd_rx_pcm@10001000 : mediatek,mt_soc_btcvsd_rx_pcm : sound/soc/mediatek/common/mtk-soc-pcm-btcvsd-rx.c : CONFIG_MTK_BTCVSD_ALSA : none
+
+-d-c--------- : /soc/mt_soc_btcvsd_tx_pcm@10001000 : mediatek,mt_soc_btcvsd_tx_pcm : sound/soc/mediatek/common/mtk-soc-pcm-btcvsd-tx.c : CONFIG_MTK_BTCVSD_ALSA : none
+
+-d-c----x---- : /soc/mtee : mediatek,mtee : drivers/misc/mediatek/mtee/tz_mod.c : tz_module-y : none
+
+-d-c--------- : /soc/mtgpu_freq : mediatek,mt8167-gpufreq : drivers/misc/mediatek/base/power/mt8167/mtk_gpufreq.c : CONFIG_MTK_GPU_SUPPORT : none
+
+------------- : /soc/mtkfb@0 : mediatek,MTKFB : no_driver : no_config : none
+
+-d-c-E------- : /soc/nfc@11001000 : mediatek,mt8167-nfc : drivers/mtd48/nand/mtk_nand.c : CONFIG_MTD_NAND_MTK : none
+
+-dDc-E------- : /soc/nfi@11001000 : mediatek,mt8167-nfi : drivers/misc/mediatek/nand/v2/mtk_nand.c : CONFIG_MTK_MTD_NAND : none
+-dDc-E------- : /soc/nfi@11001000 : mediatek,mt8167-nfi : drivers/misc/mediatek/nand/v3/mtk_nand.c : CONFIG_MTK_MTD_NAND : none
+
+-dDc-E------- : /soc/nfiecc@11002000 : mediatek,mt8167-nfiecc : drivers/misc/mediatek/nand/v2/mtk_nand.c : CONFIG_MTK_MTD_NAND : none
+-dDc-E------- : /soc/nfiecc@11002000 : mediatek,mt8167-nfiecc : drivers/misc/mediatek/nand/v3/mtk_nand.c : CONFIG_MTK_MTD_NAND : none
+
+------------- : /soc/orientation@0 : mediatek,orientation : no_driver : no_config : none
+
+-dDc----x---- : /soc/pinctrl@10005000 : mediatek,mt8167-pinctrl : drivers/misc/mediatek/hdmi/hdmitx/mt8167/hdmi_drv.c : CONFIG_MTK_INTERNAL_HDMI_SUPPORT && obj-y : none
+-dDc--------- : /soc/pinctrl@10005000 : mediatek,mt8167-pinctrl : drivers/misc/mediatek/usb20/mt8167/usb20.c : CONFIG_USB_MTK_HDRC : none
+-dDc--------- : /soc/pinctrl@10005000 : mediatek,mt8167-pinctrl : drivers/pinctrl/mediatek/pinctrl-mt8167.c : CONFIG_PINCTRL_MT8167 : none
+
+-d-c----x---- : /soc/pseudo-m4u : mediatek,mt8167-pseudo-m4u : drivers/misc/mediatek/pseudo_m4u/pseudo_m4u.c : obj-y : none
+
+-dDc----x---- : /soc/pseudo-m4u-larb0 : mediatek,mt8167-pseudo-port-m4u : drivers/misc/mediatek/pseudo_m4u/pseudo_m4u.c : obj-y : none
+-dDc----x---- : /soc/pseudo-m4u-larb0 : mediatek,mt8167-pseudo-port-m4u : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-dDc----x---- : /soc/pseudo-m4u-larb1 : mediatek,mt8167-pseudo-port-m4u : drivers/misc/mediatek/pseudo_m4u/pseudo_m4u.c : obj-y : none
+-dDc----x---- : /soc/pseudo-m4u-larb1 : mediatek,mt8167-pseudo-port-m4u : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-dDc----x---- : /soc/pseudo-m4u-larb2 : mediatek,mt8167-pseudo-port-m4u : drivers/misc/mediatek/pseudo_m4u/pseudo_m4u.c : obj-y : none
+-dDc----x---- : /soc/pseudo-m4u-larb2 : mediatek,mt8167-pseudo-port-m4u : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-d-c--------- : /soc/ptp_od@1100d000 : mediatek,mt8167-ptp_od : drivers/misc/mediatek/base/power/mt8167/mtk_ptp.c : CONFIG_MACH_MT8167 : none
+
+-d-c--------- : /soc/pwm@11008000 : mediatek,mt8167-pwm : drivers/misc/mediatek/pwm/mtk_pwm.c : CONFIG_MTK_PWM : none
+
+-dDc--------- : /soc/pwrap@1000f000 : mediatek,mt8167-pwrap : drivers/misc/mediatek/base/power/mt8167/mtk_spm_internal.c : CONFIG_MACH_MT8167 : none
+-dDc--------- : /soc/pwrap@1000f000 : mediatek,mt8167-pwrap : drivers/soc/mediatek/mtk-pmic-wrap.c : CONFIG_MTK_PMIC_WRAP : none
+
+-dDc--------- : /soc/pwrap@1000f000/mt6392 : mediatek,mt6392 : drivers/mfd/mt6397-core.c : CONFIG_MFD_MT6397 : none
+-dDc--------- : /soc/pwrap@1000f000/mt6392 : mediatek,mt6392 : drivers/soc/mediatek/mtk-pmic-wrap.c : CONFIG_MTK_PMIC_WRAP : none
+
+-dDc--------- : /soc/pwrap@1000f000/mt6392/mt6392keys : mediatek,mt6392-keys : drivers/input/keyboard/mtk_pmic_keys.c : CONFIG_KEYBOARD_MTK_PMIC : none
+-dDc--------- : /soc/pwrap@1000f000/mt6392/mt6392keys : mediatek,mt6392-keys : drivers/mfd/mt6397-core.c : CONFIG_MFD_MT6397 : none
+
+-dDc--------- : /soc/pwrap@1000f000/mt6392/mt6392pmic : mediatek,mt6392-pmic : drivers/mfd/mt6397-core.c : CONFIG_MFD_MT6397 : none
+-dDc--------- : /soc/pwrap@1000f000/mt6392/mt6392pmic : mediatek,mt6392-pmic : drivers/misc/mediatek/power/mt8167/pmic_mt6392.c : CONFIG_MTK_PMIC : none
+
+-dDc--------- : /soc/pwrap@1000f000/mt6392/mt6392regulator : mediatek,mt6392-regulator : drivers/mfd/mt6397-core.c : CONFIG_MFD_MT6397 : none
+-dDc--------- : /soc/pwrap@1000f000/mt6392/mt6392regulator : mediatek,mt6392-regulator : drivers/regulator/mt6392-regulator.c : CONFIG_REGULATOR_MT6392 : none
+
+-dDc--------- : /soc/pwrap@1000f000/mt6392/pinctrl@c000 : mediatek,mt6392-pinctrl : drivers/mfd/mt6397-core.c : CONFIG_MFD_MT6397 : none
+-dDc--------- : /soc/pwrap@1000f000/mt6392/pinctrl@c000 : mediatek,mt6392-pinctrl : drivers/pinctrl/mediatek/pinctrl-mt6392.c : CONFIG_PINCTRL_MT6392 : none
+
+-dDc-E------- : /soc/pwrap@1000f000/mt6392/typec : mediatek,mt6392-typec : drivers/mfd/mt6397-core.c : CONFIG_MFD_MT6397 : none
+-dDc-E--x---- : /soc/pwrap@1000f000/mt6392/typec : mediatek,mt6392-typec : drivers/misc/mediatek/usb_c/mt6392/typec-pltfrm.c : obj-y : none
+
+Md-c----x---- : /soc/rdma@14001000 : mediatek,mt8167-mdp-rdma : drivers/media/platform/mtk-mdp/mtk_mdp_core.c : mtk-mdp-y : none
+Md-c----x---- : /soc/rdma@14001000 : mediatek,mt8167-mdp : drivers/media/platform/mtk-mdp/mtk_mdp_core.c : mtk-mdp-y : none
+
+-d-c--------- : /soc/rng@1020c000 : mediatek,mt8167-rng : drivers/char/hw_random/mtk-rng.c : CONFIG_HW_RANDOM_MTK : none
+
+-d-c----x---- : /soc/rsz@14002000 : mediatek,mt8167-mdp-rsz : drivers/media/platform/mtk-mdp/mtk_mdp_core.c : mtk-mdp-y : none
+
+-d-c----x---- : /soc/rsz@14003000 : mediatek,mt8167-mdp-rsz : drivers/media/platform/mtk-mdp/mtk_mdp_core.c : mtk-mdp-y : none
+
+MdDc----x---- : /soc/scpsys@10006000 : mediatek,mt8167-scpsys : drivers/misc/mediatek/base/power/mt8167/mtk_idle.c : obj-y : none
+MdDc--------- : /soc/scpsys@10006000 : mediatek,mt8167-scpsys : drivers/misc/mediatek/base/power/mt8167/mtk_spm.c : CONFIG_MACH_MT8167 : none
+MdDc--------- : /soc/scpsys@10006000 : mediatek,mt8167-scpsys : drivers/misc/mediatek/base/power/mt8167/mtk_spm_internal.c : CONFIG_MACH_MT8167 : none
+MdDc----x---- : /soc/scpsys@10006000 : mediatek,mt8167-scpsys : drivers/misc/mediatek/cameraisp/src/mt8167/camera_isp.c : obj-y : none
+MdDc--------- : /soc/scpsys@10006000 : mediatek,mt8167-scpsys : drivers/soc/mediatek/mtk-scpsys-mt8167.c : CONFIG_MTK_SCPSYS_MT8167 : none
+MdDc---Hx---- : /soc/scpsys@10006000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/scpsys@10006000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/scpsys@10006000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/scpsys@10006000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/scpsys@10006000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/scpsys@10006000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/scpsys@10006000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/scpsys@10006000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+-dDc-E--x---- : /soc/sdio@11170000 : mediatek,mt8167-sdio : drivers/mmc/host/mediatek/mt8167/msdc_io.c : msdc-y : none
+-dDc-E------- : /soc/sdio@11170000 : mediatek,mt8167-sdio : drivers/mmc/host/mtk-sdio.c : CONFIG_MMC_MTK_COMM_SDIO : none
+
+Md-c--------- : /soc/serial@11005000 : mediatek,mt8167-uart : drivers/misc/mediatek/uart/uart.c : CONFIG_MTK_SERIAL : none
+Md-c--------- : /soc/serial@11005000 : mediatek,mt6577-uart : drivers/tty/serial/8250/8250_mtk.c : CONFIG_SERIAL_8250_MT6577 : none
+
+Md-c-E------- : /soc/serial@11006000 : mediatek,mt8167-uart : drivers/misc/mediatek/uart/uart.c : CONFIG_MTK_SERIAL : none
+Md-c-E------- : /soc/serial@11006000 : mediatek,mt6577-uart : drivers/tty/serial/8250/8250_mtk.c : CONFIG_SERIAL_8250_MT6577 : none
+
+Md-c-E------- : /soc/serial@11007000 : mediatek,mt8167-uart : drivers/misc/mediatek/uart/uart.c : CONFIG_MTK_SERIAL : none
+Md-c-E------- : /soc/serial@11007000 : mediatek,mt6577-uart : drivers/tty/serial/8250/8250_mtk.c : CONFIG_SERIAL_8250_MT6577 : none
+
+-dDc--------- : /soc/smi@14017000 : mediatek,mt8167-smi-common : drivers/memory/mtk-smi.c : CONFIG_MTK_SMI : none
+-dDc----x---- : /soc/smi@14017000 : mediatek,mt8167-smi-common : drivers/misc/mediatek/video/mt8167/dispsys/ddp_drv.c : obj-y : none
+
+-d-c-E------- : /soc/spi@1100c000 : mediatek,mt8167-spi : drivers/spi/spi-mt65xx.c : CONFIG_SPI_MT65XX : none
+
+M------------ : /soc/sys_cirq@10202000 : mediatek,mt8167-sys_cirq : no_driver : no_config : none
+M------------ : /soc/sys_cirq@10202000 : mediatek,mt6735-sys_cirq : no_driver : no_config : none
+MdDcC---x---- : /soc/sys_cirq@10202000 : mediatek,sys_cirq : drivers/misc/mediatek/base/power/spm_v2/mtk_spm.c : CONFIG_MACH_MT6757 && obj-y : none
+MdDcC---x---- : /soc/sys_cirq@10202000 : mediatek,sys_cirq : drivers/misc/mediatek/base/power/spm_v2/mtk_spm.c : CONFIG_MACH_KIBOPLUS && obj-y : none
+MdDc----x---- : /soc/sys_cirq@10202000 : mediatek,sys_cirq : drivers/misc/mediatek/cirq/mtk_sys_cirq.c : CONFIG_MTK_SYS_CIRQ && obj-y : none
+
+MdDc--------- : /soc/syscfg_pctl_a@10005000 : mediatek,mt8167-pctl-a-syscfg : drivers/misc/mediatek/base/power/mt8167/mtk_udi.c : CONFIG_MACH_MT8167 : none
+MdDc--------- : /soc/syscfg_pctl_a@10005000 : mediatek,mt8167-pctl-a-syscfg : drivers/misc/mediatek/nand/v2/mtk_nand.c : CONFIG_MTK_MTD_NAND : none
+MdDc--------- : /soc/syscfg_pctl_a@10005000 : mediatek,mt8167-pctl-a-syscfg : drivers/misc/mediatek/nand/v3/mtk_nand.c : CONFIG_MTK_MTD_NAND : none
+MdDc---Hx---- : /soc/syscfg_pctl_a@10005000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/syscfg_pctl_a@10005000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+MdDc--------- : /soc/syscon@16000000 : mediatek,mt8167-vdecsys : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc----x---- : /soc/syscon@16000000 : mediatek,mt8167-vdecsys : drivers/misc/mediatek/base/power/mt8167/mtk_idle.c : obj-y : none
+MdDc---Hx---- : /soc/syscon@16000000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/syscon@16000000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/syscon@16000000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/syscon@16000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/syscon@16000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/syscon@16000000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/syscon@16000000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/syscon@16000000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+-d-c----x---- : /soc/systracker@1020b000 : mediatek,bus_dbg-v1 : drivers/misc/mediatek/systracker/systracker_interface.c : !CONFIG_MTK_SYSTRACKER_V2 && !CONFIG_DEPRECATED_MTK_SYSTRACKER_SUPPORT && obj-y : none
+
+-d-c----x---- : /soc/tdshp@14006000 : mediatek,mt8167-mdp-tdshp : drivers/media/platform/mtk-mdp/mtk_mdp_core.c : mtk-mdp-y : none
+
+-d-c--------- : /soc/thermal@1100d000 : mediatek,mt8167-thermal : drivers/misc/mediatek/thermal/mt8167/mtk_ts_cpu.c : CONFIG_THERMAL : none
+
+M------------ : /soc/timer@10008000 : mediatek,mt8167-timer : no_driver : no_config : none
+Md-c--------- : /soc/timer@10008000 : mediatek,mt6577-timer : drivers/clocksource/mtk_timer.c : CONFIG_MTK_TIMER : none
+
+MdDc--------- : /soc/topckgen@10000000 : mediatek,mt8167-topckgen : drivers/clk/mediatek/clk-mt8167.c : CONFIG_COMMON_CLK_MT8167 : none
+MdDc--------- : /soc/topckgen@10000000 : mediatek,mt8167-topckgen : drivers/misc/mediatek/base/power/mt8167/mtk_dcm.c : CONFIG_MACH_MT8167 : none
+MdDc----x---- : /soc/topckgen@10000000 : mediatek,mt8167-topckgen : drivers/misc/mediatek/base/power/mt8167/mtk_idle.c : obj-y : none
+MdDc----x---- : /soc/topckgen@10000000 : mediatek,mt8167-topckgen : drivers/misc/mediatek/hdmi/hdmitx/mt8167/hdmi_drv.c : CONFIG_MTK_INTERNAL_HDMI_SUPPORT && obj-y : none
+MdDc----x---- : /soc/topckgen@10000000 : mediatek,mt8167-topckgen : drivers/misc/mediatek/video/mt8167/dispsys/ddp_pwm_mux.c : obj-y : none
+MdDc----x---- : /soc/topckgen@10000000 : mediatek,mt8167-topckgen : drivers/mmc/host/mediatek/mt8167/msdc_io.c : msdc-y : none
+MdDc---Hx---- : /soc/topckgen@10000000 : syscon : arch/arm/mach-clps711x/devices.c : obj-y : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : arch/arm/mach-u300/regulator.c : CONFIG_REGULATOR_AB3100 : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/fpga/zynq-fpga.c : CONFIG_FPGA_MGR_ZYNQ_FPGA : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/hwspinlock/qcom_hwspinlock.c : CONFIG_HWSPINLOCK_QCOM : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/irqchip/irq-digicolor.c : CONFIG_ARCH_DIGICOLOR : none
+MdDcC--Hx---- : /soc/topckgen@10000000 : syscon : drivers/media/platform/omap3isp/isp.c : omap3-isp-objs : none
+MdDcC--H----- : /soc/topckgen@10000000 : syscon : drivers/media/platform/omap3isp/isp.c : CONFIG_VIDEO_OMAP3 : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/mfd/syscon.c : CONFIG_MFD_SYSCON : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/mfd/vexpress-sysreg.c : CONFIG_MFD_VEXPRESS_SYSREG : none
+MdDcC--H----- : /soc/topckgen@10000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_CPSW : none
+MdDcC--H----- : /soc/topckgen@10000000 : syscon : drivers/net/ethernet/ti/cpsw-common.c : CONFIG_TI_DAVINCI_EMAC : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/phy/phy-dm816x-usb.c : CONFIG_PHY_DM816X_USB : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/phy/phy-exynos-mipi-video.c : CONFIG_PHY_EXYNOS_MIPI_VIDEO : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/pinctrl/pinctrl-zynq.c : CONFIG_PINCTRL_ZYNQ : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/power/reset/axxia-reset.c : CONFIG_POWER_RESET_AXXIA : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/power/reset/brcmstb-reboot.c : CONFIG_POWER_RESET_BRCMSTB : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/regulator/pbias-regulator.c : CONFIG_REGULATOR_PBIAS : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/reset/reset-zynq.c : CONFIG_ARCH_ZYNQ : none
+MdDcC--Hx---- : /soc/topckgen@10000000 : syscon : drivers/staging/media/omap4iss/iss.c : omap4-iss-objs : none
+MdDcC--H----- : /soc/topckgen@10000000 : syscon : drivers/staging/media/omap4iss/iss.c : CONFIG_VIDEO_OMAP4 : none
+MdDc---H----- : /soc/topckgen@10000000 : syscon : drivers/tty/serial/clps711x.c : CONFIG_SERIAL_CLPS711X : none
+
+Md-c----x---- : /soc/toprgu@10007000 : mediatek,mt8167-wdt : drivers/mmc/host/mediatek/mt8167/msdc_io.c : msdc-y : none
+Md-c--------- : /soc/toprgu@10007000 : mediatek,mt6589-wdt : drivers/watchdog/mtk_wdt.c : CONFIG_MEDIATEK_WATCHDOG : none
+
+M------------ : /soc/touch@ : mediatek,mt8167-touch : no_driver : no_config : none
+Md-c----x---- : /soc/touch@ : mediatek,mt8163-touch : drivers/input/touchscreen/mediatek/mtk_tpd.c : obj-y : none
+
+-dDc--------- : /soc/usb@11100000 : mediatek,mt8167-usb20 : drivers/misc/mediatek/usb20/mt8167/usb20.c : CONFIG_USB_MTK_HDRC : none
+-dDc--------- : /soc/usb@11100000 : mediatek,mt8167-usb20 : drivers/misc/mediatek/usb20/mt8167/usb20_host.c : CONFIG_USB_MTK_HDRC : none
+
+-dDc--------- : /soc/usb@11190000 : mediatek,mt8167-usb11 : drivers/misc/mediatek/usb11/mt8167/musbfsh_core.c : CONFIG_MTK_USBFSH : none
+-dDc--------- : /soc/usb@11190000 : mediatek,mt8167-usb11 : drivers/misc/mediatek/usb11/mt8167/musbfsh_mt65xx.c : CONFIG_MTK_USBFSH : none
+
+-d-c----x---- : /soc/vcu@0 : mediatek,mt8167-vcu : drivers/media/platform/mtk-vcu/mtk_vcu.c : mtk-vcu-y : none
+
+-d-c----x---- : /soc/vcu@1 : mediatek,mt8167-vcu : drivers/media/platform/mtk-vcu/mtk_vcu.c : mtk-vcu-y : none
+
+-d-c----x---- : /soc/vcu@2 : mediatek,mt8167-vcu : drivers/media/platform/mtk-vcu/mtk_vcu.c : mtk-vcu-y : none
+
+-d-c----x---- : /soc/vidcap@0 : mediatek,mt8167-vidcap : drivers/media/platform/mtk-camera/mtk_vidcap_drv.c : obj-y : none
+
+-d-c----x---- : /soc/wdma@14004000 : mediatek,mt8167-mdp-wdma : drivers/media/platform/mtk-mdp/mtk_mdp_core.c : mtk-mdp-y : none
+
+-d-c----x---- : /soc/wrot@14005000 : mediatek,mt8167-mdp-wrot : drivers/media/platform/mtk-mdp/mtk_mdp_core.c : mtk-mdp-y : none
+
+-d-c--------- : /soc/xo@10210000 : mediatek,mt8167-xo : drivers/misc/mediatek/xo/xo.c : CONFIG_MACH_MT8167 : none
+
+-d-c----x---- : /sound : mediatek,mt8167-mt6392 : sound/soc/mediatek/mt8167/mt8167_evb.c : snd-soc-mt8167-mt6392-mach-objs : none
+
+-dDc--------- : /timer : arm,armv8-timer : drivers/clocksource/arm_arch_timer.c : CONFIG_MACH_MT6799 && CONFIG_ARM_ARCH_TIMER : none
+-dD---------- : /timer : arm,armv8-timer : virt/kvm/arm/arch_timer.c : no_makefile : none
+
