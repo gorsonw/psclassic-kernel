@@ -4694,14 +4694,12 @@
 						<Folder Name="netfilter_ipv4">
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ip_tables.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_ah.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_CLUSTERIP.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_ECN.h"/>
+							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_clusterip.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_ecn.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_LOG.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_REJECT.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_TTL.h"/>
+							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_log.h"/>
+							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_reject.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_ttl.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_ULOG.h"/>
+							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv4/ipt_ulog.h"/>
 						</Folder>
 						<Folder Name="netfilter_ipv6">
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6_tables.h"/>
@@ -4710,11 +4708,11 @@
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_HL.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_hl.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_ipv6header.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_LOG.h"/>
+							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_log.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_mh.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_NPT.h"/>
+							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_npt.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_opts.h"/>
-							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_REJECT.h"/>
+							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_reject.h"/>
 							<F N="../../../../../../../linux-xilinx-v14.5-zynq/include/uapi/linux/netfilter_ipv6/ip6t_rt.h"/>
 						</Folder>
 						<Folder Name="nfsd">
