@@ -362,7 +362,7 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 CFLAGS_MODULE   =
 AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
-CFLAGS_KERNEL	= -Wno-error=format-truncation -Wno-error=attribute-alias -Wno-error=packed-not-aligned
+CFLAGS_KERNEL	= -Wno-error=format-truncation -Wno-error=attribute-alias -Wno-error=packed-not-aligned -Wno-error=format-overflow=
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage -fno-tree-loop-im
 
